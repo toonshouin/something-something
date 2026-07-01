@@ -1,4 +1,12 @@
 {
+	"headers": {
+		"coreCompetencies": "ความสามารถหลัก",
+		"workExperience": "ประสบการณ์การทำงาน",
+		"projects": "โปรเจ็กต์ผลงาน",
+		"education": "ประวัติการศึกษา",
+		"certifications": "ใบรับรอง",
+		"interests": "ความสนใจ"
+	},
 	"intro": {
 		"name": "กฤตภาส ยาวิราช",
 		"nickname": "การ์ตูน",
@@ -6,6 +14,7 @@
 		"email": "me@toonshou.in",
 		"github": "toonshouin",
 		"linkedin": "toonoeichi",
+		"hidePicture": false,
 		"location": {
 			"house_no": "55/228 - 229",
 			"moo": "5",
@@ -19,101 +28,139 @@
 			"zip_code": "11110"
 		},
 		"website": "toonshou.in",
-		"description": "เป็นนักเรียนระดับชั้นประกาศนีย์บัตรวิชาชีพชั้นสูงที่สนใจในการพัฒนาเว็บแอปพลิเคชัน, ขณะนี้กำลังพัฒนาเว็บแอปพลิเคชันบนอุปกรณ์หลายสรรพสิ่ง เช่น คอมพิวเตอร์ โทรศัพท์ โดยใช้ภาษาในการพัฒนาที่ทันสมัยและรองรับบนอุปกรณ์สมัยใหม่ โดยเป็นส่วนหนึ่งในการพัฒนาบนมาตรฐานเปิด (Open-Source)"
+		"description": "นักศึกษาไอทีที่เชี่ยวชาญด้าน Web Development มีประสบการณ์กับเฟรมเวิร์คสมัยใหม่ทั้งบนแพลตฟอร์มเดสก์ท็อปและมือถือ สามารถเรียนรู้เทคโนโลยีใหม่ๆ ได้อย่างรวดเร็ว มีส่วนร่วมในโปรเจ็กต์โอเพนซอร์ซ และพัฒนาแอปพลิเคชันเว็บที่แข็งแกร่งตามมาตรฐานสมัยใหม่"
 	},
 	"projects": [
 		{
-			"name": "Main webpage",
-			"details": "Main webpage, you name it! Based on koinuko.pink v5 and v6 style with mysite v1",
-			"url": "toonshou.in",
-			"hide": false
-		},
-		{
-			"name": "Tree's Site.",
-			"details": "My personal link-in-bio, linktree clone kinda style.",
-			"url": "card.toonshou.in",
-			"hide": false
-		},
-		{
-			"name": "My other site.",
-			"details": "When the old net, meet the new net. koinuko.pink v5 and v6 style with mysite v1 with 80-90s code style.",
-			"url": "legacy.toonshou.in",
-			"hide": false
-		},
-		{
 			"name": "Hack Club Thai Translation",
-			"details": "Translate Hack Club Global site into Thai.",
+			"bullets": [
+				"แปลเว็บไซต์ของ Hack Club Global เป็นภาษาไทยเพื่อเพิ่มโอกาสในการเข้าถึงสำหรับนักเรียนในท้องถิ่น"
+			],
 			"url": "thai.hackclub.com",
 			"hide": true
 		},
 		{
 			"name": "Cartoon Office Word",
-			"details": "Basic Word Processor App with Visual Basic.",
+			"bullets": [
+				"พัฒนาแอปพลิเคชันประมวลผลคำขั้นพื้นฐานโดยใช้ Visual Basic เพื่อทำความเข้าใจกระบวนทัศน์การแสดงผลข้อความหลัก"
+			],
 			"url": "github.com/StoryHouseProduction/CartoonOffice",
 			"hide": false
 		},
 		{
-			"name": "What the lyrics?",
-			"details": "My lyrics site with all the weird , dirty , and everything that possible in the Lyrics!",
-			"url": "wtlyrics.toonstorytime.me",
+			"name": "เว็บไซต์หลัก (toonshou.in)",
+			"bullets": [
+				"เว็บไซต์ส่วนตัวสำหรับนำเสนอผลงานและแบ่งปันเนื้อหาบนอุปกรณ์ที่ทันสมัย",
+				"ออกแบบโดยคำนึงถึงความเข้ากันได้กับระบบเดิมและใช้ภาษาการออกแบบที่ทันสมัย"
+			],
+			"url": "toonshou.in",
+			"hide": false
+		},
+		{
+			"name": "เว็บไซต์อื่นๆ (legacy.toonshou.in)",
+			"bullets": [
+				"ความพยายามในการเขียนเว็บไซต์ด้วยมุมมองที่แตกต่าง ได้รับแรงบันดาลใจจาก Neocities ในยุค 90",
+				"แสดงศักยภาพและข้อจำกัดของเทคโนโลยีเว็บในยุคนั้น"
+			],
+			"url": "legacy.toonshou.in",
+			"hide": false
+		},
+		{
+			"name": "หน้าต่างลิงก์รวม (card.toonshou.in)",
+			"bullets": [
+				"เว็บไซต์ขนาดเล็กที่รวมลิงก์ทั้งหมดของฉัน สามารถเข้าถึงได้อย่างรวดเร็วเพียงแค่สแกนคิวอาร์โค้ด"
+			],
+			"url": "card.toonshou.in",
 			"hide": false
 		}
 	],
 	"technologies": [
 		{
-			"section": "ภาษา:",
-			"details": "SQL (พอใช้งานได้), PHP, Python, Shell (พอใช้งานได้), Visual Basic, C , C++, Java (พอใช้งานได้), JavaScript (พอใช้งานได้), TypeScript (พอใช้งานได้)"
+			"section": "การเขียนโปรแกรม",
+			"details": "TypeScript, JavaScript, Python, PHP, C, C++, SQL, Bash/Shell"
 		},
 		{
-			"section": "เฟรมเวิร์ค:",
-			"details": "TailwindCSS, DaisyUI, Bootstrap (พอใช้งานได้), shadcn-svelte, Flask (พอใช้งานได้), Svelte (พอใช้งานได้)"
+			"section": "เฟรมเวิร์ก",
+			"details": "SvelteKit, TailwindCSS, DaisyUI, Bootstrap, shadcn-svelte, Flask"
 		},
 		{
-			"section": "เครื่องมือ:",
-			"details": "Git, Docker, Bash, Zsh, GitHub Codespaces, Plesk"
-		},
-		{
-			"section": "อื่นๆ:",
-			"details": "AWS, Firebase, Vercel, Github Actions, CloudFlare, Azure"
+			"section": "โครงสร้างพื้นฐานระบบคลาวด์",
+			"details": "AWS, Azure, Vercel, Cloudflare, Firebase, Docker, GitHub Actions, Git"
 		}
 	],
 	"workExperiences": [
 		{
-			"position": "นักศึกษาฝึกงาน",
+			"position": "นักศึกษาฝึกงานด้านไอที",
 			"company": "สำนักงานเทศบาลนครบางบัวทอง",
 			"url": "",
 			"years": [
 				"2566"
 			],
-			"details": [
-				"เรียนรู้ระบบการทำงานในสำนักงาน รวมถึงหลักการพื้นฐานของการทำงานในระบบราชการ",
-				"เรียนรู้ที่จะนำความรู้ไปประยุกต์ใช้ในงานต่างๆ เช่น การทำ OCR จากเอกสาร รวมถึงการดูแลรักษาคอมพิวเตอร์ในฐานะฝ่ายพัสดุ สำนักการศึกษา"
+			"bullets": [
+				"สนับสนุนฝ่ายเทคโนโลยีสารสนเทศเพื่อการศึกษาโดยการบำรุงรักษาฮาร์ดแวร์คอมพิวเตอร์และแก้ไขปัญหาระบบ",
+				"ประยุกต์ใช้เวิร์กโฟลว์ OCR เพื่อแปลงเอกสารราชการเป็นรูปแบบดิจิทัล ช่วยเพิ่มประสิทธิภาพของแผนกและความแม่นยำในการตรวจสอบ"
 			]
 		}
 	],
 	"educations": [
 		{
 			"head": "วิทยาลัยเทคโนโลยีพงษ์สวัสดิ์",
-			"details": "ประกาศนียบัตรวิชาชีพชั้นสูง สาขาวิชาเทคโนโลยีสารสนเทศ, TH. 2568 - 2570 (GPA ≈ 3.69)"
+			"details": "ประกาศนียบัตรวิชาชีพชั้นสูง สาขาวิชาเทคโนโลยีสารสนเทศ, พ.ศ. 2568 - 2570",
+			"gpa": "3.69"
 		},
 		{
 			"head": "วิทยาลัยอาชีวศึกษาดุสิตพาณิชยการ นนทบุรี",
-			"details": "ประกาศนียบัตรวิชาชีพ สาขาวิชาคอมพิวเตอร์ธุรกิจ, TH. 2565 - 2568 (GPA = 3.70)"
+			"details": "ประกาศนียบัตรวิชาชีพ สาขาวิชาคอมพิวเตอร์ธุรกิจ, พ.ศ. 2565 - 2568",
+			"gpa": "3.70",
+			"relevantCoursework": [
+				"ธุรกิจคอมพิวเตอร์",
+				"การเขียนโปรแกรมเบื้องต้น"
+			]
 		},
 		{
 			"head": "โรงเรียนพระแม่สกลสงเคราะห์",
-			"details": "ประถมศึกษา-มัธยมศึกษาปีที่ 3, TH. 2552 - 2565 (GPA = 2.80)"
+			"details": "ประถมศึกษา-มัธยมศึกษาปีที่ 3, พ.ศ. 2552 - 2565",
+			"gpa": "2.80",
+			"hide": true
 		},
 		{
 			"head": "โรงเรียนมารีวิทยา นนทบุรี",
-			"details": "ระดับปฐมวัย, TH. 2551-2552"
+			"details": "ระดับปฐมวัย, พ.ศ. 2551-2552",
+			"hide": true
+		}
+	],
+	"certifications": [
+		{
+			"name": "Microsoft Applied Skills: Administer Active Directory Domain Services",
+			"date": "1 กรกฎาคม 2569",
+			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
+		},
+		{
+			"name": "Microsoft Applied Skills: Create an Intelligent Document Processing Solution with Azure AI Document Intelligence",
+			"date": "1 กรกฎาคม 2569",
+			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/20279A84E57A93E?sharingId=557C1B61BE7EE12F"
+		},
+		{
+			"name": "Microsoft Applied Skills: Deploy and Administer Linux Virtual Machines on Microsoft Azure",
+			"date": "1 กรกฎาคม 2569",
+			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/CB849F743F1B0B09?sharingId=557C1B61BE7EE12F"
+		},
+		{
+			"name": "Microsoft Applied Skills: Get Started with Identities and Access Using Microsoft Entra",
+			"date": "1 กรกฎาคม 2569",
+			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
+		},
+		{
+			"name": "Microsoft Applied Skills: Get Started Developing Agents in Microsoft Foundry",
+			"date": "1 กรกฎาคม 2569",
+			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/AB8E61F7BBEC99AA?sharingId=557C1B61BE7EE12F"
 		}
 	],
 	"interests": [
-		"Areas : Coding, Productivity & Life-hacks, Mechanical Keyboards",
-		"Typing : 35 WPM, 98% accuracy",
-		"Games : Portal, Portal 2, Minecraft, Roblox, Umamusume: Pretty Derby, Blue Archive",
-		"Music : Anything..."
+		"วิศวกรรมซอฟต์แวร์และสถาปัตยกรรม",
+		"ระบบคลาวด์และโครงสร้างพื้นฐาน",
+		"การมีส่วนร่วมในโอเพนซอร์ซ",
+		"แมคคานิคอลคีย์บอร์ดและเครื่องมือเพิ่มประสิทธิภาพการทำงาน"
 	],
 	"resumeUrl": {
 		"sourceLink": "https://github.com/toonshouin",
