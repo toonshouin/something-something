@@ -1,4 +1,4 @@
-import Intro from "../src/Intro.svelte"
+import Intro from "../src/components/Intro.svelte"
 import { render } from "@testing-library/svelte"
 
 describe("Intro Component", () => {

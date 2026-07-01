@@ -1,4 +1,4 @@
-import Work from "../src/Work.svelte"
+import Work from "../src/components/Work.svelte"
 import { render } from "@testing-library/svelte"
 
 describe("Work Component", () => {
@@ -14,7 +14,7 @@ describe("Work Component", () => {
       company: "My Company",
       url: "https://example.com",
       years: [2019, 2021],
-      details: ["Developed A", "Lead team B"],
+      bullets: ["Developed A", "Lead team B"],
     })
 
     expect(getByText("Web Developer")).toBeInTheDocument()
