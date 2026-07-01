@@ -1,0 +1,122 @@
+{
+	"intro": {
+		"name": "กฤตภาส ยาวิราช",
+		"nickname": "การ์ตูน",
+		"phone": "+66845441345",
+		"email": "me@toonshou.in",
+		"github": "toonshouin",
+		"linkedin": "toonoeichi",
+		"location": {
+			"house_no": "55/228 - 229",
+			"moo": "5",
+			"soi": "7",
+			"village": "มนวดี เอ็กซ์คูลชีฟ",
+			"road": "บ้านกล้วย - ไทรน้อย",
+			"sub_district": "พิมลราช",
+			"district": "บางบัวทอง",
+			"province": "นนทบุรี",
+			"country": "ไทย",
+			"zip_code": "11110"
+		},
+		"website": "toonshou.in",
+		"description": "เป็นนักเรียนระดับชั้นประกาศนีย์บัตรวิชาชีพชั้นสูงที่สนใจในการพัฒนาเว็บแอปพลิเคชัน, ขณะนี้กำลังพัฒนาเว็บแอปพลิเคชันบนอุปกรณ์หลายสรรพสิ่ง เช่น คอมพิวเตอร์ โทรศัพท์ โดยใช้ภาษาในการพัฒนาที่ทันสมัยและรองรับบนอุปกรณ์สมัยใหม่ โดยเป็นส่วนหนึ่งในการพัฒนาบนมาตรฐานเปิด (Open-Source)"
+	},
+	"projects": [
+		{
+			"name": "Main webpage",
+			"details": "Main webpage, you name it! Based on koinuko.pink v5 and v6 style with mysite v1",
+			"url": "toonshou.in",
+			"hide": false
+		},
+		{
+			"name": "Tree's Site.",
+			"details": "My personal link-in-bio, linktree clone kinda style.",
+			"url": "card.toonshou.in",
+			"hide": false
+		},
+		{
+			"name": "My other site.",
+			"details": "When the old net, meet the new net. koinuko.pink v5 and v6 style with mysite v1 with 80-90s code style.",
+			"url": "legacy.toonshou.in",
+			"hide": false
+		},
+		{
+			"name": "Hack Club Thai Translation",
+			"details": "Translate Hack Club Global site into Thai.",
+			"url": "thai.hackclub.com",
+			"hide": true
+		},
+		{
+			"name": "Cartoon Office Word",
+			"details": "Basic Word Processor App with Visual Basic.",
+			"url": "github.com/StoryHouseProduction/CartoonOffice",
+			"hide": false
+		},
+		{
+			"name": "What the lyrics?",
+			"details": "My lyrics site with all the weird , dirty , and everything that possible in the Lyrics!",
+			"url": "wtlyrics.toonstorytime.me",
+			"hide": false
+		}
+	],
+	"technologies": [
+		{
+			"section": "ภาษา:",
+			"details": "SQL (พอใช้งานได้), PHP, Python, Shell (พอใช้งานได้), Visual Basic, C , C++, Java (พอใช้งานได้), JavaScript (พอใช้งานได้), TypeScript (พอใช้งานได้)"
+		},
+		{
+			"section": "เฟรมเวิร์ค:",
+			"details": "TailwindCSS, DaisyUI, Bootstrap (พอใช้งานได้), shadcn-svelte, Flask (พอใช้งานได้), Svelte (พอใช้งานได้)"
+		},
+		{
+			"section": "เครื่องมือ:",
+			"details": "Git, Docker, Bash, Zsh, GitHub Codespaces, Plesk"
+		},
+		{
+			"section": "อื่นๆ:",
+			"details": "AWS, Firebase, Vercel, Github Actions, CloudFlare, Azure"
+		}
+	],
+	"workExperiences": [
+		{
+			"position": "นักศึกษาฝึกงาน",
+			"company": "สำนักงานเทศบาลนครบางบัวทอง",
+			"url": "",
+			"years": [
+				"2566"
+			],
+			"details": [
+				"เรียนรู้ระบบการทำงานในสำนักงาน รวมถึงหลักการพื้นฐานของการทำงานในระบบราชการ",
+				"เรียนรู้ที่จะนำความรู้ไปประยุกต์ใช้ในงานต่างๆ เช่น การทำ OCR จากเอกสาร รวมถึงการดูแลรักษาคอมพิวเตอร์ในฐานะฝ่ายพัสดุ สำนักการศึกษา"
+			]
+		}
+	],
+	"educations": [
+		{
+			"head": "วิทยาลัยเทคโนโลยีพงษ์สวัสดิ์",
+			"details": "ประกาศนียบัตรวิชาชีพชั้นสูง สาขาวิชาเทคโนโลยีสารสนเทศ, TH. 2568 - 2570 (GPA ≈ 3.69)"
+		},
+		{
+			"head": "วิทยาลัยอาชีวศึกษาดุสิตพาณิชยการ นนทบุรี",
+			"details": "ประกาศนียบัตรวิชาชีพ สาขาวิชาคอมพิวเตอร์ธุรกิจ, TH. 2565 - 2568 (GPA = 3.70)"
+		},
+		{
+			"head": "โรงเรียนพระแม่สกลสงเคราะห์",
+			"details": "ประถมศึกษา-มัธยมศึกษาปีที่ 3, TH. 2552 - 2565 (GPA = 2.80)"
+		},
+		{
+			"head": "โรงเรียนมารีวิทยา นนทบุรี",
+			"details": "ระดับปฐมวัย, TH. 2551-2552"
+		}
+	],
+	"interests": [
+		"Areas : Coding, Productivity & Life-hacks, Mechanical Keyboards",
+		"Typing : 35 WPM, 98% accuracy",
+		"Games : Portal, Portal 2, Minecraft, Roblox, Umamusume: Pretty Derby, Blue Archive",
+		"Music : Anything..."
+	],
+	"resumeUrl": {
+		"sourceLink": "https://github.com/toonshouin",
+		"fullVersion": "https://resume.toonshou.in"
+	}
+}

@@ -1,0 +1,123 @@
+{
+	"intro": {
+		"name": "Kritthapath Yaviraj",
+		"nickname": "Cartoon",
+		"phone": "+66845441345",
+		"email": "me@toonshou.in",
+		"github": "toonshouin",
+		"linkedin": "toonoeichi",
+		"location": {
+			"house_no": "55/228 - 229",
+			"moo": "5",
+			"soi": "7",
+			"village": "Monwadee Exclusive",
+			"road": "Bann Kluay - Sai Noi",
+			"sub_district": "Phimonrat",
+			"district": "Bang Bua Thong",
+			"province": "Nonthaburi",
+			"country": "Thailand",
+			"zip_code": "11110"
+		},
+		"website": "toonshou.in",
+		"description": "A Higher Vocational Certificate of Information Technology Student in Web Development field, working on developing Web Application with various device including Desktop Computer , Smart Devices using Modern Framework supported on modern hardware, Contributing to open-source projects , learning new technologies and making or impoving Web Application to met with standards."
+	},
+	"projects": [
+		{
+			"name": "Main webpage",
+			"details": "Main webpage, you name it! Based on koinuko.pink v5 and v6 style with mysite v1",
+			"url": "toonshou.in",
+			"hide": false
+		},
+		{
+			"name": "Tree's Site.",
+			"details": "My personal link-in-bio, linktree clone kinda style.",
+			"url": "card.toonshou.in",
+			"hide": false
+		},
+		{
+			"name": "My other site.",
+			"details": "When the old net, meet the new net. koinuko.pink v5 and v6 style with mysite v1 with 80-90s code style.",
+			"url": "legacy.toonshou.in",
+			"hide": false
+		},
+		{
+			"name": "Hack Club Thai Translation",
+			"details": "Translate Hack Club Global site into Thai.",
+			"url": "thai.hackclub.com",
+			"hide": true
+		},
+		{
+			"name": "Cartoon Office Word",
+			"details": "Basic Word Processor App with Visual Basic.",
+			"url": "github.com/StoryHouseProduction/CartoonOffice",
+			"hide": false
+		},
+		{
+			"name": "What the lyrics?",
+			"details": "My lyrics site with all the weird , dirty , and everything that possible in the Lyrics!",
+			"url": "wtlyrics.toonstorytime.me",
+			"hide": false
+		}
+	],
+	"technologies": [
+		{
+			"section": "Languages:",
+			"details": "SQL (familiar), PHP, Python, Shell (familiar), Visual Basic, C , C++, Java (familiar), JavaScript (familiar), TypeScript (familiar)"
+		},
+		{
+			"section": "Frameworks:",
+			"details": "TailwindCSS, DaisyUI, Bootstrap (familiar), shadcn-svelte, Flask (familiar), Svelte (familiar)"
+		},
+		{
+			"section": "Tools:",
+			"details": "Git, Docker, Bash, Zsh, GitHub Codespaces"
+		},
+		{
+			"section": "Other:",
+			"details": "AWS, Firebase, Vercel, Github Actions, CloudFlare"
+		}
+	],
+	"workExperiences": [
+		{
+			"position": "Trainee",
+			"company": "Bang Bua Thong Municipality Office",
+			"url": "",
+			"years": [
+				"2023"
+			],
+			"details": [
+				"Learn the system of working in the office, including basic principle of government work.",
+				"Learn to improvise all the knowledge into the works like, doing OCR from the docuement, proof-checking, and maintaining all the Computer as a IT for Education Department."
+			]
+		}
+	],
+	"educations": [
+		{
+			"head": "Pongsawadi Technological College",
+			"details": "Higher Vocational Certificate of Information Technology, TH. 2025 - 2027 (GPA ≈ 3.69)"
+		},
+		{
+			"head": "Dusit Commerical Nonthaburi Vocational College",
+			"details": "Vocational Certificate of Computer Business, TH. 2022 - 2025 (GPA = 3.70)"
+		},
+		{
+			"head": "Pramaesakolsongkroh School",
+			"details": "Grade 1-9, TH. 2009-2022 (GPA = 2.80)"
+		},
+		{
+			"head": "Maree Wittaya Nonthaburi School",
+			"details": "Pre-Kintergarden, TH. 2008-2009"
+		}
+	],
+	"interests": [
+		"Areas : Coding, Productivity & Life-hacks, Mechanical Keyboards",
+		"Typing : 35 WPM, 98% accuracy",
+		"Games : Portal, Portal 2, Minecraft, Roblox, Umamusume: Pretty Derby, Blue Archive",
+		"Music : Anything...",
+		"Remote working is a OK. I extensively use self time tracking app for all my works."
+	],
+	"resumeUrl": {
+		"sourceLink": "https://github.com/toonshouin",
+		"fullVersion": "https://resume.toonshou.in"
+	}
+}
