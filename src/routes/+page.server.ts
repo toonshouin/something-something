@@ -22,5 +22,12 @@ export async function load({ url }) {
         }
     }
 
+    // Filter out items with hide: true entirely
+    if (profile.projects) profile.projects = profile.projects.filter((p: any) => !p.hide);
+    if (profile.technologies) profile.technologies = profile.technologies.filter((t: any) => !t.hide);
+    if (profile.workExperiences) profile.workExperiences = profile.workExperiences.filter((w: any) => !w.hide);
+    if (profile.educations) profile.educations = profile.educations.filter((e: any) => !e.hide);
+    if (profile.certifications) profile.certifications = profile.certifications.filter((c: any) => !c.hide);
+
     return { profile, lang };
 }
