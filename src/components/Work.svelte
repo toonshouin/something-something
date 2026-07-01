@@ -5,7 +5,7 @@
 	export let company: string = '';
 	export let url: string = '';
 	export let years: string[] = [];
-	export let details: string[] = [];
+	export let bullets: string[] = [];
 </script>
 
 <div class="work-experience">
@@ -18,7 +18,7 @@
 			<div class="flex-1 text-right">{years.join('-')}</div>
 		</div>
 		<ul class="text-left list-disc pl-8 print:pl-6">
-			{#each details as detail}
+			{#each bullets as detail}
 				<Hideable>
 					<li>
 						{detail}
