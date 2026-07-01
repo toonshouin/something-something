@@ -4,18 +4,21 @@ const config = {
 
 	theme: {
 		extend: {
-			fontFamily: [
-				'-apple-system',
-				'BlinkMacSystemFont',
-				'Segoe UI',
-				'Roboto',
-				'Oxygen',
-				'Ubuntu',
-				'Cantarell',
-				'Open Sans',
-				'Helvetica Neue',
-				'sans-serif'
-			],
+			fontFamily: {
+				sans: [
+					'Noto Sans Thai',
+					'-apple-system',
+					'BlinkMacSystemFont',
+					'Segoe UI',
+					'Roboto',
+					'Oxygen',
+					'Ubuntu',
+					'Cantarell',
+					'Open Sans',
+					'Helvetica Neue',
+					'sans-serif'
+				]
+			},
 			screens: {
 				print: { raw: 'print' }
 			}
