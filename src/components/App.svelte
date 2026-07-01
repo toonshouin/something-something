@@ -1,63 +1,79 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
-	import type { IProfileResp } from '../types';
-	import Hideable from './Hideable.svelte';
-	import Intro from './Intro.svelte';
-	import Kofi from './Kofi.svelte';
-	import Work from './Work.svelte';
+	import { page } from '$app/stores';
+	import type { IProfileResp } from "../types";
+	import Hideable from "./Hideable.svelte";
+	import Intro from "./Intro.svelte";
+	import Kofi from "./Kofi.svelte";
+	import Work from "./Work.svelte";
 
-	let profile: IProfileResp;
+	export let profile: IProfileResp;
+	export let lang: string;
 
-	$: dataLink = `${fullVersionLink}/data/profile.json`;
+	$: dataLink = `${fullVersionLink}`;
 	$: ({
-		intro = {} as IProfileResp['intro'],
+		intro = {} as IProfileResp["intro"],
 		projects = [],
 		technologies = [],
 		workExperiences = [],
 		educations = [],
 		interests = [],
-		resumeUrl: { sourceLink = '', fullVersionLink = '' } = {}
+		resumeUrl: { sourceLink = "", fullVersionLink = "" } = {},
 	} = profile || {});
 
-	onMount(async () => (profile = await fetchResumeProfile()));
-
-	async function fetchResumeProfile() {
-		const resp = await fetch('/data/profile.json');
-		return await resp.json();
-	}
+	$: tokenParam = $page.url.searchParams.has('token') ? `&token=${$page.url.searchParams.get('token')}` : '';
 </script>
 
 <!-- Remove this is you does not want Kofi widget on your site -->
-{#if intro.github == ''}
+{#if intro.github == ""}
 	<Kofi name={intro.github} />
 {/if}
 
-<header class="web-only text-center p-4 sm:p-6 bg-indigo-600 text-white w-screen">
-	<h1 class="text-4xl">Resume</h1>
-	<h3>
-		<button on:click={() => window.print()} class="underline text-lg">[Print]</button>
-	</h3>
+<header
+	class="web-only text-center p-4 sm:p-6 bg-indigo-600 text-white w-screen"
+>
+	<div class="inline-flex items-center gap-2 justify-center">
+		<h1 class="text-4xl">Resume</h1>
+		<button on:click={() => window.print()} class="underline text-lg"
+			>[Print]</button
+		>
+		<a href={sourceLink} target="_blank" rel="noopener">[Source]</a>
+		<a href={`?lang=en${tokenParam}`} class="underline text-lg">[EN]</a>
+		<a href={`?lang=th${tokenParam}`} class="underline text-lg">[TH]</a>
+	</div>
 	<p>
-		Printer-friendly standard resume, any HTML tags with <code>web-only</code> CSS class will be hidden
-		on print.
+		Printer-friendly standard resume, any HTML tags with <code
+			>web-only</code
+		> CSS class will be hidden on print.
 	</p>
-	<p>You can click at any sections or lines hide some information before printing.</p>
-	<a href={sourceLink} target="_blank" rel="noopener">[Source]</a>
-	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
+	<p>
+		You can click at any sections or lines hide some information before
+		printing.
+	</p>
 </header>
 
 <main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
-	<Intro {...intro} />
+	<Intro {...intro} {lang} />
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Technologies and Languages</h2>
+			<span class="text-left list-disc inline-block"
+				>{intro.description}</span
+			>
+		</Hideable>
+	</section>
+
+	<section>
+		<Hideable>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">
+				Technologies and Languages
+			</h2>
 			<hr />
 			<ul class="text-left list-disc pl-8">
 				{#each technologies as tech}
 					<Hideable>
 						<li>
-							<span class="w-28 inline-block">{tech.section}</span>
+							<span class="w-28 inline-block">{tech.section}</span
+							>
 							<span>{tech.details}</span>
 						</li>
 					</Hideable>
@@ -68,7 +84,9 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">
+				Education
+			</h2>
 			<hr />
 
 			<ul class="text-left list-disc pl-8">
@@ -85,7 +103,9 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">
+				Work Experience
+			</h2>
 			<hr />
 
 			{#each workExperiences as exp}
@@ -96,7 +116,9 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">
+				Projects
+			</h2>
 			<hr />
 
 			<ul class="text-left list-disc pl-8">
@@ -105,7 +127,10 @@
 						<li>
 							<strong>{project.name}</strong>
 							- {project.details}
-							<a href="https://{project.url}" target="_blank" rel="noreferrer"
+							<a
+								href="https://{project.url}"
+								target="_blank"
+								rel="noreferrer"
 								><strong>{project.url}</strong></a
 							>
 						</li>
@@ -117,7 +142,9 @@
 
 	<section>
 		<Hideable>
-			<h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
+			<h2 class="text-2xl print:text-4xl uppercase text-left">
+				Interests
+			</h2>
 			<hr />
 
 			<ul class="text-left list-disc pl-8">
@@ -133,7 +160,9 @@
 	</section>
 
 	<footer class="print-only">
-		(See <a href={fullVersionLink} target="_blank" rel="noopener">full version</a>
+		(See <a href={fullVersionLink} target="_blank" rel="noopener"
+			>full version</a
+		>
 		or <a href={sourceLink} target="_blank" rel="noopener">source</a>)
 	</footer>
 </main>

@@ -1,19 +1,53 @@
 <script lang="ts">
-	export let name: string = 'Foo';
-	export let nickname: string = '';
-	export let phone: string = '';
-	export let email: string = '';
-	export let github: string = '';
-	export let linkedin: string = '';
-	export let location: string = '';
-	export let website: string = '';
+	export let name: string = "Foo";
+	export let nickname: string = "";
+	export let phone: string = "";
+	export let email: string = "";
+	export let github: string = "";
+	export let linkedin: string = "";
+	export let location: any = {};
+	export let website: string = "";
+	export let lang: string = "en";
+
+	$: isThai = lang === "th";
+
+	$: formattedLocation = (() => {
+		if (typeof location === "string") return location;
+		if (location.hidden) {
+			return [location.province, location.country]
+				.filter(Boolean)
+				.join(", ");
+		}
+
+		const mooPrefix = isThai ? "หมู่ " : "Moo ";
+		const soiPrefix = isThai ? "ซอย " : "Soi ";
+		const roadSuffix = isThai ? "" : " Rd.";
+		const roadPrefix = isThai ? "ถนน" : "";
+
+		return [
+			location.house_no,
+			location.soi ? `${soiPrefix}${location.soi}` : "",
+			location.moo ? `${mooPrefix}${location.moo}` : "",
+			location.village,
+			location.road ? `${roadPrefix}${location.road}${roadSuffix}` : "",
+			location.sub_district,
+			location.district,
+			location.province,
+			location.zip_code,
+			location.country,
+		]
+			.filter(Boolean)
+			.join(", ");
+	})();
 </script>
 
-<div class="flex flex-wrap flex-col sm:flex-row print:flex-row text-sm sm:text-base">
+<div
+	class="flex flex-wrap flex-col sm:flex-row print:flex-row text-sm sm:text-base"
+>
 	<div class="flex-1 text-left sm:py-4 w-48">
 		<p><a href={`tel:${phone}`}>{phone}</a></p>
 		<p><a href={`mailto:${email}`}>{email}</a></p>
-		<p>{location}</p>
+		<p>{formattedLocation}</p>
 	</div>
 
 	<h2
@@ -23,17 +57,27 @@
 		<span class="block -mt-1 text-base lg:text-lg">({nickname})</span>
 	</h2>
 
-	<div class="flex-1 text-left sm:text-right print:text-right sm:py-4 w-48 text-sm sm:text-base">
+	<div
+		class="flex-1 text-left sm:text-right print:text-right sm:py-4 w-48 text-sm sm:text-base"
+	>
 		<p>
-			<a href={`https://github.com/${github}`} target="_blank" rel="noreferrer"
-				>github.com/{github}</a
+			<a
+				href={`https://github.com/${github}`}
+				target="_blank"
+				rel="noreferrer">github.com/{github}</a
 			>
 		</p>
 		<p>
-			<a href={`https://${website}`} target="_blank" rel="noreferrer">{website}</a>
+			<a href={`https://${website}`} target="_blank" rel="noreferrer"
+				>{website}</a
+			>
 		</p>
 		<p>
-			<a href={`https://linkedin.com/in/${linkedin}`} target="_blank" rel="noreferrer">Linkedin</a>
+			<a
+				href={`https://linkedin.com/in/${linkedin}`}
+				target="_blank"
+				rel="noreferrer">Linkedin</a
+			>
 		</p>
 	</div>
 </div>
