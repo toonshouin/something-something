@@ -90,15 +90,15 @@
 	],
 	"workExperiences": [
 		{
-			"position": "IT Trainee",
-			"company": "Bang Bua Thong Municipality Office",
-			"url": "",
+			"position": "Intern",
+			"company": "Procurement and Supplies Division, Bureau of Education, Bang Bua Thong City Municipality",
+			"url": "https://buathongcity.go.th/frontpage",
 			"years": [
 				"2023"
 			],
 			"bullets": [
-				"Supported the IT for Education Department by maintaining computer hardware and performing system troubleshooting.",
-				"Implemented OCR workflows to digitize government documents, enhancing departmental efficiency and proof-checking accuracy."
+				"Supported the Educational Information Technology Department by maintaining computer hardware and troubleshooting system issues.",
+				"Implemented OCR workflows to digitize official government documents, enhancing departmental efficiency and audit accuracy."
 			]
 		}
 	],
@@ -121,7 +121,7 @@
 			"head": "Pramaesakolsongkroh School",
 			"details": "Grade 1-9, TH. 2009-2022",
 			"gpa": "2.80",
-			"hide": true
+			"hide": false
 		},
 		{
 			"head": "Maree Wittaya Nonthaburi School",
