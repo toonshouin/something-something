@@ -1,5 +1,6 @@
 <script lang="ts">
-	import Hideable from './Hideable.svelte';
+	import { fullVersionLink } from "../data";
+	import Hideable from "./Hideable.svelte";
 	export let name: string = "Foo";
 	export let nickname: string = "";
 	export let phone: string = "";
@@ -43,24 +44,29 @@
 	})();
 </script>
 
-<div class="flex flex-col sm:flex-row print:flex-row items-center sm:items-start print:items-start gap-6 text-sm sm:text-base text-left">
+<div
+	class="flex flex-col sm:flex-row print:flex-row items-center sm:items-start print:items-start gap-6 text-sm sm:text-base text-left"
+>
 	{#if !hidePicture}
 		<div class="flex-none order-first print:order-none">
 			<Hideable>
 				<img
-					src={`https://github.com/${github}.png`}
+					src={`profile_picture.png`}
 					alt={`${name}'s Profile Picture`}
 					class="w-32 h-auto rounded-lg border-2 border-gray-200 print:border-gray-800 object-cover"
 				/>
 			</Hideable>
 		</div>
 	{/if}
-	
+
 	<div class="flex-1 w-full">
 		<h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold p-0 mb-1">
-			{name} <span class="text-lg font-normal text-gray-600">({nickname})</span>
+			{name}
+			<span class="text-lg font-normal text-gray-600">({nickname})</span>
 		</h1>
-		<div class="flex flex-col sm:flex-row print:flex-row gap-4 sm:gap-8 text-gray-700">
+		<div
+			class="flex flex-col sm:flex-row print:flex-row gap-4 sm:gap-8 text-gray-700"
+		>
 			<div class="flex-1">
 				<p><a href={`tel:${phone}`}>{phone}</a></p>
 				<p><a href={`mailto:${email}`}>{email}</a></p>
@@ -68,13 +74,25 @@
 			</div>
 			<div class="flex-1">
 				<p>
-					<a href={`https://github.com/${github}`} target="_blank" rel="noreferrer">github.com/{github}</a>
+					<a
+						href={`https://github.com/${github}`}
+						target="_blank"
+						rel="noreferrer">github.com/{github}</a
+					>
 				</p>
 				<p>
-					<a href={`https://${website}`} target="_blank" rel="noreferrer">{website}</a>
+					<a
+						href={`https://${website}`}
+						target="_blank"
+						rel="noreferrer">{website}</a
+					>
 				</p>
 				<p>
-					<a href={`https://linkedin.com/in/${linkedin}`} target="_blank" rel="noreferrer">linkedin.com/in/{linkedin}</a>
+					<a
+						href={`https://linkedin.com/in/${linkedin}`}
+						target="_blank"
+						rel="noreferrer">linkedin.com/in/{linkedin}</a
+					>
 				</p>
 			</div>
 		</div>
