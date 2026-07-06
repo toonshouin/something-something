@@ -44,7 +44,7 @@
 			"bullets": [
 				"พัฒนาแอปพลิเคชันประมวลผลคำขั้นพื้นฐานโดยใช้ Visual Basic เพื่อทำความเข้าใจกระบวนทัศน์การแสดงผลข้อความหลัก"
 			],
-			"url": "github.com/StoryHouseProduction/CartoonOffice",
+			"url": "github.com/EchoStory/CartoonOffice",
 			"hide": false
 		},
 		{
@@ -71,6 +71,26 @@
 				"เว็บไซต์ขนาดเล็กที่รวมลิงก์ทั้งหมดของฉัน สามารถเข้าถึงได้อย่างรวดเร็วเพียงแค่สแกนคิวอาร์โค้ด"
 			],
 			"url": "card.toonshou.in",
+			"hide": false
+		},
+		{
+			"name": "ระบบจองห้องดนตรีออนไลน์โดยควบคุมผ่านเว็บแอปพลิเคชัน | PSC Music Web",
+			"bullets": [
+				"พัฒนาเว็บแอปพลิเคชันสำหรับการจองห้องดนตรีออนไลน์และการรับสมัครชมรมแบบรวมศูนย์",
+				"ออกแบบระบบปฏิทินกลาง เพื่อให้ผู้ใช้งานสามารถตรวจสอบตารางการใช้งานห้องได้ทันที",
+				"พัฒนาระบบแจ้งเตือนและอนุมัติการจอง เพื่อเพิ่มประสิทธิภาพในการจัดการปัญหาคิวทับซ้อนของวิทยาลัย"
+			],
+			"url": "github.com/psc-musicwebproject/website",
+			"hide": false
+		},
+		{
+			"name": "เครื่องวัด P.M 2.5 , อุณหภูมิ , คาร์บอนมอนอกไซด์ และความชื้นอัจฉริยะผ่านระบบ โฮม แอสสิตเตนท์ | Smart PM. 2.5, Temperature, Carbon monoxide and Humidity Measure Devices via Home Assistant System.",
+			"bullets": [
+				"ประดิษฐ์และเขียนโปรแกรมควบคุมอุปกรณ์ IoT ด้วย Raspberry Pi Pico สำหรับตรวจวัดฝุ่น PM 2.5, อุณหภูมิ, ความชื้น และคาร์บอนมอนอกไซด์",
+				"พัฒนาระบบเชื่อมต่อกับ Home Assistant เพื่อแสดงผลข้อมูลและสร้างระบบสั่งการอัตโนมัติในการควบคุมเครื่องใช้ไฟฟ้าให้แก้ไขปัญหามลภาวะได้ทันที",
+				"ออกแบบระบบแจ้งเตือนคุณภาพอากาศผ่าน LINE Notify แบบเรียลไทม์ ซึ่งผ่านการทดสอบการใช้งานจริงและได้รับความพึงพอใจด้านความง่ายในการใช้งานระดับมาก (ค่าเฉลี่ย 4.25)"
+			],
+			"url": "github.com/EchoStory/SmartAirMeasurer",
 			"hide": false
 		}
 	],
@@ -154,6 +174,41 @@
 			"name": "Microsoft Applied Skills: Get Started Developing Agents in Microsoft Foundry",
 			"date": "1 กรกฎาคม 2569",
 			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/AB8E61F7BBEC99AA?sharingId=557C1B61BE7EE12F"
+		},
+		{
+			"name": "คุณวุฒิวิชาชีพ สาขาวิชาชีพอุตสาหกรรมดิจิทัล สาขาความมั่นคงปลอดภัยทางดิจิทัลและส่วนบุคคล อาชีพช่างสนับสนุนด้านเทคนิค ระดับ 3",
+			"date": "23 มีนาคม 2569",
+			"verificationUrl": "https://cpweb.ewe.go.th/show-cert?code=284071&system=1&type=certCom&bgImage=false"
+		},
+		{
+			"name": "หลักสูตรการประกอบและซ่อมบำรุงไมโครคอมพิวเตอร์ 59 ชั่วโมง",
+			"date": "30 พฤศจิกายน 2562",
+			"url": "certificate/pdf/ctn-microcomputer.pdf"
+		},
+		{
+			"name": "หลักสูตรการประกอบและซ่อมบำรุงไมโครโน๊ตบุ๊ค 48 ชั่วโมง",
+			"date": "9 กุมภาพันธ์ 2565",
+			"url": "certificate/pdf/ctn-micronotebook.pdf"
+		},
+		{
+			"name": "โครงการอบรมเชิงปฏิบัติการ เรื่อง “การใช้ปัญญาประดิษฐ์ (AI) ในระบบสมองกลฝังตัวเพื่อการควบคุมอัตโนมัติ”",
+			"date": "24 พฤษจิกายน 2568",
+			"url": "certificate/pdf/kmutnb-arduinoai.pdf"
+		},
+		{
+			"name": "โครงการอบรมเชิงปฏิบัติการ เรื่อง “คอนเทนต์ครีเอเตอร์ (Content Creator) สร้างคอนเทนต์อย่างไร ให้โดนตาต้องใจ”, โครงการบทบาทพื้นที่สร้างสรรค์สำหรับเด็กและเยาวชน ประจำปี 2567",
+			"date": "28 สิงหาคม 2567",
+			"url": "certificate/pdf/btt-contentcreator.pdf"
+		},
+		{
+			"name": "Samsung Innovation Campus: Basic Coding 2022",
+			"date": "9 พฤษภาคม 2565",
+			"url": "certificate/pdf/sic2022-basiccoding.pdf"
+		},
+		{
+			"name": "การแข่งขันตอบปัญหาคอมพิวเตอร์ รองชนะเลิศอันดับ 1",
+			"date": "26 มีนาคม 2564",
+			"url": "certificate/pdf/pms-askcom64.pdf"
 		}
 	],
 	"interests": [
