@@ -19,6 +19,7 @@
 			education: "Education",
 			certifications: "Certifications",
 			interests: "Interests",
+			positions: "Positions",
 		},
 		intro = {} as IProfileResp["intro"],
 		projects = [],
@@ -27,6 +28,7 @@
 		educations = [],
 		certifications = [],
 		interests = [],
+		positions = [],
 		resumeUrl: { sourceLink = "", fullVersionLink = "" } = {},
 	} = profile || {});
 
@@ -95,6 +97,33 @@
 									>{tech.section}</strong
 								>
 								<span class="flex-1">{tech.details}</span>
+							</li>
+						</Hideable>
+					{/each}
+				</ul>
+			</Hideable>
+		</section>
+
+		<section>
+			<Hideable>
+				<h2
+					class="text-xl sm:text-2xl print:text-xl font-bold uppercase text-left text-gray-800 border-b-2 border-gray-300 pb-1 mb-3"
+				>
+					{headers.positions}
+				</h2>
+				<ul class="text-left space-y-3 print:space-y-2">
+					{#each positions as position}
+						<Hideable>
+							<li>
+								<div class="flex items-start">
+									<div class="font-bold shrink-0">
+										{position.name}
+									</div>
+									<div class="shrink-0">&nbsp;-&nbsp;</div>
+									<div class="flex-1">
+										{position.description}
+									</div>
+								</div>
 							</li>
 						</Hideable>
 					{/each}
