@@ -7,10 +7,16 @@ export interface IProfileResp {
 	educations: IEducation[];
 	certifications: ICertification[];
 	interests: string[];
+	positions: IPosition[];
 	resumeUrl: {
 		sourceLink: string;
 		fullVersionLink: string;
 	};
+}
+
+export interface IPosition {
+	name: string;
+	description: string;
 }
 
 export interface IHeaders {
@@ -20,6 +26,7 @@ export interface IHeaders {
 	education: string;
 	certifications: string;
 	interests: string;
+	positions: string;
 }
 
 export interface IIntro {
