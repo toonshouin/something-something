@@ -1,169 +1,250 @@
 {
-	"headers": {
-		"coreCompetencies": "Core Competencies",
-		"workExperience": "Work Experience",
-		"projects": "Projects",
-		"education": "Education",
-		"certifications": "Certifications",
-		"interests": "Interests"
-	},
-	"intro": {
-		"name": "Kritthapath Yaviraj",
-		"nickname": "Cartoon",
-		"phone": "+66845441345",
-		"email": "me@toonshou.in",
-		"github": "toonshouin",
-		"linkedin": "toonoeichi",
-		"hidePicture": false,
-		"location": {
-			"house_no": "55/228 - 229",
-			"moo": "5",
-			"soi": "7",
-			"village": "Monwadee Exclusive",
-			"road": "Bann Kluay - Sai Noi",
-			"sub_district": "Phimonrat",
-			"district": "Bang Bua Thong",
-			"province": "Nonthaburi",
-			"country": "Thailand",
-			"zip_code": "11110"
-		},
-		"website": "toonshou.in",
-		"description": "IT student specializing in Web Development with experience in modern frameworks across desktop and mobile platforms. Proven ability to contribute to open-source projects, quickly adopt new technologies, and build robust web applications adhering to modern standards."
-	},
-	"projects": [
-		{
-			"name": "Hack Club Thai Translation",
-			"bullets": [
-				"Translated Hack Club Global site into Thai to expand accessibility for local students."
-			],
-			"url": "thai.hackclub.com",
-			"hide": true
-		},
-		{
-			"name": "Cartoon Office Word",
-			"bullets": [
-				"Developed a foundational word processor application utilizing Visual Basic to understand core text rendering paradigms."
-			],
-			"url": "github.com/StoryHouseProduction/CartoonOffice",
-			"hide": false
-		},
-		{
-			"name": "Main Site (toonshou.in)",
-			"bullets": [
-				"Personal Site used to show-off myself and share content across Modern Devices.",
-				"Maintained backward compatibility and modern design language."
-			],
-			"url": "toonshou.in",
-			"hide": false
-		},
-		{
-			"name": "My other site (legacy.toonshou.in)",
-			"bullets": [
-				"Attempt at writing a site with a different view, inspired by Neocities in the 90s.",
-				"Show-offs web technologies and limitations of that era."
-			],
-			"url": "legacy.toonshou.in",
-			"hide": false
-		},
-		{
-			"name": "Linktree clone (card.toonshou.in)",
-			"bullets": [
-				"Small site including all links for myself, accessible quickly by just scanning a qr-code."
-			],
-			"url": "card.toonshou.in",
-			"hide": false
-		}
-	],
-	"technologies": [
-		{
-			"section": "Programming",
-			"details": "TypeScript, JavaScript, Python, PHP, C, C++, SQL, Bash/Shell"
-		},
-		{
-			"section": "Frameworks",
-			"details": "SvelteKit, TailwindCSS, DaisyUI, Bootstrap, shadcn-svelte, Flask"
-		},
-		{
-			"section": "Cloud & Infrastructure",
-			"details": "AWS, Azure, Vercel, Cloudflare, Firebase, Docker, GitHub Actions, Git"
-		}
-	],
-	"workExperiences": [
-		{
-			"position": "Intern",
-			"company": "Procurement and Supplies Division, Bureau of Education, Bang Bua Thong City Municipality",
-			"url": "https://buathongcity.go.th/frontpage",
-			"years": [
-				"2023"
-			],
-			"bullets": [
-				"Supported the Educational Information Technology Department by maintaining computer hardware and troubleshooting system issues.",
-				"Implemented OCR workflows to digitize official government documents, enhancing departmental efficiency and audit accuracy."
-			]
-		}
-	],
-	"educations": [
-		{
-			"head": "Pongsawadi Technological College",
-			"details": "Higher Vocational Certificate of Information Technology, TH. 2025 - 2027",
-			"gpa": "3.69"
-		},
-		{
-			"head": "Dusit Commerical Nonthaburi Vocational College",
-			"details": "Vocational Certificate of Computer Business, TH. 2022 - 2025",
-			"gpa": "3.70",
-			"relevantCoursework": [
-				"Computer Business",
-				"Basic Programming"
-			]
-		},
-		{
-			"head": "Pramaesakolsongkroh School",
-			"details": "Grade 1-9, TH. 2009-2022",
-			"gpa": "2.80",
-			"hide": false
-		},
-		{
-			"head": "Maree Wittaya Nonthaburi School",
-			"details": "Pre-Kintergarden, TH. 2008-2009",
-			"hide": true
-		}
-	],
-	"certifications": [
-		{
-			"name": "Microsoft Applied Skills: Administer Active Directory Domain Services",
-			"date": "01st July 2026",
-			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
-		},
-		{
-			"name": "Microsoft Applied Skills: Create an Intelligent Document Processing Solution with Azure AI Document Intelligence",
-			"date": "01st July 2026",
-			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/20279A84E57A93E?sharingId=557C1B61BE7EE12F"
-		},
-		{
-			"name": "Microsoft Applied Skills: Deploy and Administer Linux Virtual Machines on Microsoft Azure",
-			"date": "01st July 2026",
-			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/CB849F743F1B0B09?sharingId=557C1B61BE7EE12F"
-		},
-		{
-			"name": "Microsoft Applied Skills: Get Started with Identities and Access Using Microsoft Entra",
-			"date": "01st July 2026",
-			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
-		},
-		{
-			"name": "Microsoft Applied Skills: Get Started Developing Agents in Microsoft Foundry",
-			"date": "01st July 2026",
-			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/AB8E61F7BBEC99AA?sharingId=557C1B61BE7EE12F"
-		}
-	],
-	"interests": [
-		"Software Engineering & Architecture",
-		"Cloud Computing & Infrastructure",
-		"Open Source Contribution",
-		"Mechanical Keyboards & Productivity Tools"
-	],
-	"resumeUrl": {
-		"sourceLink": "https://github.com/toonshouin",
-		"fullVersion": "https://resume.toonshou.in"
-	}
+  "headers": {
+    "coreCompetencies": "Core Competencies",
+    "workExperience": "Work Experience",
+    "projects": "Projects",
+    "education": "Education",
+    "certifications": "Certifications",
+    "interests": "Interests",
+    "positions": "Workable Positions"
+  },
+  "intro": {
+    "name": "Kritthapath Yaviraj",
+    "nickname": "Cartoon",
+    "phone": "+66845441345",
+    "email": "me@toonshou.in",
+    "github": "toonshouin",
+    "linkedin": "toonoeichi",
+    "hidePicture": false,
+    "location": {
+      "house_no": "55/228 - 229",
+      "moo": "5",
+      "soi": "7",
+      "village": "Monwadee Exclusive",
+      "road": "Bann Kluay - Sai Noi",
+      "sub_district": "Phimonrat",
+      "district": "Bang Bua Thong",
+      "province": "Nonthaburi",
+      "country": "Thailand",
+      "zip_code": "11110"
+    },
+    "website": "toonshou.in",
+    "description": "IT student specializing in Web Development with experience in modern frameworks across desktop and mobile platforms. Proven ability to contribute to open-source projects, quickly adopt new technologies, and build robust web applications adhering to modern standards."
+  },
+  "projects": [
+    {
+      "name": "Hack Club Thai Translation",
+      "bullets": [
+        "Translated the Hack Club Global website into Thai to improve accessibility and reach among Thai-speaking students."
+      ],
+      "url": "thai.hackclub.com",
+      "hide": true
+    },
+    {
+      "name": "Cartoon Office Word",
+      "bullets": [
+        "Developed a basic word processing application using Visual Basic to explore fundamental text rendering and document editing concepts."
+      ],
+      "url": "github.com/EchoStory/CartoonOffice",
+      "hide": false
+    },
+    {
+      "name": "Main Website (toonshou.in)",
+      "bullets": [
+        "Developed a personal website to showcase projects, share content, and provide an accessible experience across modern devices.",
+        "Designed the website with a modern visual interface while maintaining compatibility with older systems and web technologies."
+      ],
+      "url": "toonshou.in",
+      "hide": false
+    },
+    {
+      "name": "Legacy Website (legacy.toonshou.in)",
+      "bullets": [
+        "Created an alternative personal website inspired by the aesthetics of 1990s websites and the Neocities community.",
+        "Explored the capabilities and limitations of legacy web technologies through a retro-inspired design."
+      ],
+      "url": "legacy.toonshou.in",
+      "hide": false
+    },
+    {
+      "name": "Personal Link Hub (card.toonshou.in)",
+      "bullets": [
+        "Developed a lightweight personal landing page that consolidates social media profiles and other useful links, providing convenient access through a QR code."
+      ],
+      "url": "card.toonshou.in",
+      "hide": false
+    },
+    {
+      "name": "Online Music Room Booking and Web-Based Control System | PSC Music Web",
+      "bullets": [
+        "Developed a centralized web application for online music room reservations and club membership registration.",
+        "Designed a centralized calendar system that allows users to check room availability and booking schedules.",
+        "Implemented booking notifications and approval workflows to improve reservation management and help prevent scheduling conflicts within the college."
+      ],
+      "url": "github.com/psc-musicwebproject/website",
+      "hide": false
+    },
+    {
+      "name": "Smart Air Quality Monitoring System Using Home Assistant | Smart Air Measurer",
+      "bullets": [
+        "Designed and programmed a Raspberry Pi Pico-based IoT device to measure PM2.5 particulate matter, temperature, humidity, and carbon monoxide levels.",
+        "Integrated the monitoring system with Home Assistant to visualize environmental data and enable automated control of electrical appliances in response to air quality conditions.",
+        "Developed real-time air quality notifications using LINE Notify. The system underwent practical testing and achieved a high user satisfaction rating for ease of use, with an average score of 4.25."
+      ],
+      "url": "github.com/EchoStory/SmartAirMeasurer",
+      "hide": false
+    }
+  ],
+  "technologies": [
+    {
+      "section": "Programming",
+      "details": "TypeScript, JavaScript, Python, PHP, C, C++, SQL, Bash/Shell, Visual Basic"
+    },
+    {
+      "section": "Frameworks",
+      "details": "SvelteKit, TailwindCSS, DaisyUI, Bootstrap, shadcn-svelte, Flask, Laravel"
+    },
+    {
+      "section": "Cloud & Infrastructure",
+      "details": "AWS, Azure, Vercel, Cloudflare, Firebase, Docker, GitHub Actions, Git, Plesk"
+    },
+    {
+      "section": "Tools",
+      "details": "Visual Studio Code, Antigravity, Arduino IDE, Git, Postman, mitmproxy"
+    }
+  ],
+  "workExperiences": [
+    {
+      "position": "Intern",
+      "company": "Procurement and Supplies Division, Bureau of Education, Bang Bua Thong City Municipality",
+      "url": "https://buathongcity.go.th/frontpage",
+      "years": ["2023"],
+      "bullets": [
+        "Supported the Educational Information Technology Department by maintaining computer hardware and troubleshooting system issues.",
+        "Implemented OCR workflows to digitize official government documents, enhancing departmental efficiency and audit accuracy."
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "head": "Pongsawadi Technological College",
+      "details": "Higher Vocational Certificate of Information Technology, TH. 2025 - 2027",
+      "gpa": "3.69"
+    },
+    {
+      "head": "Dusit Commerical Nonthaburi Vocational College",
+      "details": "Vocational Certificate of Computer Business, TH. 2022 - 2025",
+      "gpa": "3.70",
+      "relevantCoursework": ["Computer Business", "Basic Programming"]
+    },
+    {
+      "head": "Pramaesakolsongkroh School",
+      "details": "Grade 1-9, TH. 2009-2022",
+      "gpa": "2.80",
+      "hide": false
+    },
+    {
+      "head": "Maree Wittaya Nonthaburi School",
+      "details": "Pre-Kintergarden, TH. 2008-2009",
+      "hide": true
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Applied Skills: Administer Active Directory Domain Services",
+      "date": "21 May 2025",
+      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
+    },
+    {
+      "name": "Microsoft Applied Skills: Create an Intelligent Document Processing Solution with Azure AI Document Intelligence",
+      "date": "28 October 2024",
+      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/20279A84E57A93E?sharingId=557C1B61BE7EE12F"
+    },
+    {
+      "name": "Microsoft Applied Skills: Deploy and Administer Linux Virtual Machines on Microsoft Azure",
+      "date": "28 October 2024",
+      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/CB849F743F1B0B09?sharingId=557C1B61BE7EE12F"
+    },
+    {
+      "name": "Microsoft Applied Skills: Get Started with Identities and Access Using Microsoft Entra",
+      "date": "21 May 2025",
+      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
+    },
+    {
+      "name": "Microsoft Applied Skills: Get Started Developing Agents in Microsoft Foundry",
+      "date": "1 July 2026",
+      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/AB8E61F7BBEC99AA?sharingId=557C1B61BE7EE12F"
+    },
+    {
+      "name": "Professional Qualification in Digital Industry, Digital Security and Privacy Sub-Sector, Network Support Technician, Level 3",
+      "date": "23 March 2026",
+      "verificationUrl": "https://cpweb.ewe.go.th/show-cert?code=284071&system=1&type=certCom&bgImage=false"
+    },
+    {
+      "name": "Microcomputer Assembly and Maintenance Training Course (59 Hours)",
+      "date": "30 November 2019",
+      "url": "certificate/pdf/ctn-microcomputer.pdf"
+    },
+    {
+      "name": "Notebook Computer Assembly and Maintenance Training Course (48 Hours)",
+      "date": "9 February 2022",
+      "url": "certificate/pdf/ctn-micronotebook-en.pdf"
+    },
+    {
+      "name": "Hands-on Workshop: Artificial Intelligence (AI) in Embedded Systems for Automation and Control",
+      "date": "24 November 2025",
+      "url": "certificate/pdf/kmutnb-arduinoai.pdf"
+    },
+    {
+      "name": "Smart AI Innovation - Hands-on Training Workshop (12 Hours)",
+      "date": "17 September 2026",
+      "url": "certificate/pdf/kmutnb-smartai.pdf"
+    },
+    {
+      "name": "Content Creator Workshop: Creating Engaging Content – Creative Spaces for Children and Youth Project 2024",
+      "date": "28 August 2024",
+      "url": "certificate/pdf/btt-contentcreator.pdf"
+    },
+    {
+      "name": "Samsung Innovation Campus: Basic Coding 2022",
+      "date": "9 May 2022",
+      "url": "certificate/pdf/sic2022-basiccoding.pdf"
+    },
+    {
+      "name": "Computer Knowledge Competition – First Runner-Up (2nd Place)",
+      "date": "26 March 2021",
+      "url": "certificate/pdf/pms-askcom64.pdf"
+    },
+    {
+      "name": "LINK Certified Network Cabling for Engineering (LCCE)",
+      "date": "10 June 2026",
+      "url": "certificate/pdf/interlink-lcce.pdf"
+    },
+    {
+      "name": "Pearson: Generative AI Foundations",
+      "date": "13 August 2026",
+      "verificationUrl": "https://verify.certiport.com/rkeV-u8N2",
+      "url": "certificate/pdf/ccs-generativeaifoundations.pdf"
+    }
+  ],
+  "interests": [
+    "Software Engineering & Architecture",
+    "Cloud Computing & Infrastructure",
+    "Open Source Contribution",
+    "Mechanical Keyboards & Productivity Tools"
+  ],
+  "positions": [
+    {
+      "name": "Web Developer",
+      "description": "Develop and maintain websites and web applications using modern web technologies. Manage version control and improve development workflows using Git, including application deployment, updates, and maintenance."
+    },
+    {
+      "name": "IT Administrator",
+      "description": "Provide technical support, troubleshoot issues, and maintain hardware, software, and network infrastructure. Manage user accounts, access permissions, and authentication services using Active Directory and Single Sign-On (SSO) solutions such as Authentik and Microsoft Entra ID."
+    }
+  ],
+  "resumeUrl": {
+    "sourceLink": "https://github.com/toonshouin",
+    "fullVersion": "https://resume.toonshou.in"
+  }
 }

@@ -1,224 +1,246 @@
 {
-	"headers": {
-		"coreCompetencies": "ความสามารถหลัก",
-		"workExperience": "ประสบการณ์การทำงาน",
-		"projects": "โปรเจ็กต์ผลงาน",
-		"education": "ประวัติการศึกษา",
-		"certifications": "ใบรับรอง",
-		"interests": "ความสนใจ"
-	},
-	"intro": {
-		"name": "กฤตภาส ยาวิราช",
-		"nickname": "การ์ตูน",
-		"phone": "+66845441345",
-		"email": "me@toonshou.in",
-		"github": "toonshouin",
-		"linkedin": "toonoeichi",
-		"hidePicture": false,
-		"location": {
-			"house_no": "55/228 - 229",
-			"moo": "5",
-			"soi": "7",
-			"village": "มนวดี เอ็กซ์คูลชีฟ",
-			"road": "บ้านกล้วย - ไทรน้อย",
-			"sub_district": "พิมลราช",
-			"district": "บางบัวทอง",
-			"province": "นนทบุรี",
-			"country": "ไทย",
-			"zip_code": "11110"
-		},
-		"website": "toonshou.in",
-		"description": "นักศึกษาไอทีที่เชี่ยวชาญด้าน Web Development มีประสบการณ์กับเฟรมเวิร์คสมัยใหม่ทั้งบนแพลตฟอร์มเดสก์ท็อปและมือถือ สามารถเรียนรู้เทคโนโลยีใหม่ๆ ได้อย่างรวดเร็ว มีส่วนร่วมในโปรเจ็กต์โอเพนซอร์ซ และพัฒนาแอปพลิเคชันเว็บที่แข็งแกร่งตามมาตรฐานสมัยใหม่"
-	},
-	"projects": [
-		{
-			"name": "Hack Club Thai Translation",
-			"bullets": [
-				"แปลเว็บไซต์ของ Hack Club Global เป็นภาษาไทยเพื่อเพิ่มโอกาสในการเข้าถึงสำหรับนักเรียนในท้องถิ่น"
-			],
-			"url": "thai.hackclub.com",
-			"hide": true
-		},
-		{
-			"name": "Cartoon Office Word",
-			"bullets": [
-				"พัฒนาแอปพลิเคชันประมวลผลคำขั้นพื้นฐานโดยใช้ Visual Basic เพื่อทำความเข้าใจกระบวนทัศน์การแสดงผลข้อความหลัก"
-			],
-			"url": "github.com/EchoStory/CartoonOffice",
-			"hide": false
-		},
-		{
-			"name": "เว็บไซต์หลัก (toonshou.in)",
-			"bullets": [
-				"เว็บไซต์ส่วนตัวสำหรับนำเสนอผลงานและแบ่งปันเนื้อหาบนอุปกรณ์ที่ทันสมัย",
-				"ออกแบบโดยคำนึงถึงความเข้ากันได้กับระบบเดิมและใช้ภาษาการออกแบบที่ทันสมัย"
-			],
-			"url": "toonshou.in",
-			"hide": false
-		},
-		{
-			"name": "เว็บไซต์อื่นๆ (legacy.toonshou.in)",
-			"bullets": [
-				"ความพยายามในการเขียนเว็บไซต์ด้วยมุมมองที่แตกต่าง ได้รับแรงบันดาลใจจาก Neocities ในยุค 90",
-				"แสดงศักยภาพและข้อจำกัดของเทคโนโลยีเว็บในยุคนั้น"
-			],
-			"url": "legacy.toonshou.in",
-			"hide": false
-		},
-		{
-			"name": "หน้าต่างลิงก์รวม (card.toonshou.in)",
-			"bullets": [
-				"เว็บไซต์ขนาดเล็กที่รวมลิงก์ทั้งหมดของฉัน สามารถเข้าถึงได้อย่างรวดเร็วเพียงแค่สแกนคิวอาร์โค้ด"
-			],
-			"url": "card.toonshou.in",
-			"hide": false
-		},
-		{
-			"name": "ระบบจองห้องดนตรีออนไลน์โดยควบคุมผ่านเว็บแอปพลิเคชัน | PSC Music Web",
-			"bullets": [
-				"พัฒนาเว็บแอปพลิเคชันสำหรับการจองห้องดนตรีออนไลน์และการรับสมัครชมรมแบบรวมศูนย์",
-				"ออกแบบระบบปฏิทินกลาง เพื่อให้ผู้ใช้งานสามารถตรวจสอบตารางการใช้งานห้องได้ทันที",
-				"พัฒนาระบบแจ้งเตือนและอนุมัติการจอง เพื่อเพิ่มประสิทธิภาพในการจัดการปัญหาคิวทับซ้อนของวิทยาลัย"
-			],
-			"url": "github.com/psc-musicwebproject/website",
-			"hide": false
-		},
-		{
-			"name": "เครื่องวัด P.M 2.5 , อุณหภูมิ , คาร์บอนมอนอกไซด์ และความชื้นอัจฉริยะผ่านระบบ โฮม แอสสิตเตนท์ | Smart PM. 2.5, Temperature, Carbon monoxide and Humidity Measure Devices via Home Assistant System.",
-			"bullets": [
-				"ประดิษฐ์และเขียนโปรแกรมควบคุมอุปกรณ์ IoT ด้วย Raspberry Pi Pico สำหรับตรวจวัดฝุ่น PM 2.5, อุณหภูมิ, ความชื้น และคาร์บอนมอนอกไซด์",
-				"พัฒนาระบบเชื่อมต่อกับ Home Assistant เพื่อแสดงผลข้อมูลและสร้างระบบสั่งการอัตโนมัติในการควบคุมเครื่องใช้ไฟฟ้าให้แก้ไขปัญหามลภาวะได้ทันที",
-				"ออกแบบระบบแจ้งเตือนคุณภาพอากาศผ่าน LINE Notify แบบเรียลไทม์ ซึ่งผ่านการทดสอบการใช้งานจริงและได้รับความพึงพอใจด้านความง่ายในการใช้งานระดับมาก (ค่าเฉลี่ย 4.25)"
-			],
-			"url": "github.com/EchoStory/SmartAirMeasurer",
-			"hide": false
-		}
-	],
-	"technologies": [
-		{
-			"section": "การเขียนโปรแกรม",
-			"details": "TypeScript, JavaScript, Python, PHP, C, C++, SQL, Bash/Shell"
-		},
-		{
-			"section": "เฟรมเวิร์ก",
-			"details": "SvelteKit, TailwindCSS, DaisyUI, Bootstrap, shadcn-svelte, Flask"
-		},
-		{
-			"section": "โครงสร้างพื้นฐานระบบคลาวด์",
-			"details": "AWS, Azure, Vercel, Cloudflare, Firebase, Docker, GitHub Actions, Git"
-		}
-	],
-	"workExperiences": [
-		{
-			"position": "นักศึกษาฝึกงาน",
-			"company": "กองพัสดุครุภัณฑ์ สำนักการศึกษา เทศบาลนครบางบัวทอง",
-			"url": "https://buathongcity.go.th/frontpage",
-			"years": [
-				"2566"
-			],
-			"bullets": [
-				"สนับสนุนฝ่ายเทคโนโลยีสารสนเทศเพื่อการศึกษาโดยการบำรุงรักษาฮาร์ดแวร์คอมพิวเตอร์และแก้ไขปัญหาระบบ",
-				"ประยุกต์ใช้เวิร์กโฟลว์ OCR เพื่อแปลงเอกสารราชการเป็นรูปแบบดิจิทัล ช่วยเพิ่มประสิทธิภาพของแผนกและความแม่นยำในการตรวจสอบ"
-			]
-		}
-	],
-	"educations": [
-		{
-			"head": "วิทยาลัยเทคโนโลยีพงษ์สวัสดิ์",
-			"details": "ประกาศนียบัตรวิชาชีพชั้นสูง สาขาวิชาเทคโนโลยีสารสนเทศ, พ.ศ. 2568 - 2570",
-			"gpa": "3.69"
-		},
-		{
-			"head": "วิทยาลัยอาชีวศึกษาดุสิตพาณิชยการ นนทบุรี",
-			"details": "ประกาศนียบัตรวิชาชีพ สาขาวิชาคอมพิวเตอร์ธุรกิจ, พ.ศ. 2565 - 2568",
-			"gpa": "3.70",
-			"relevantCoursework": [
-				"ธุรกิจคอมพิวเตอร์",
-				"การเขียนโปรแกรมเบื้องต้น"
-			]
-		},
-		{
-			"head": "โรงเรียนพระแม่สกลสงเคราะห์",
-			"details": "ประถมศึกษา-มัธยมศึกษาปีที่ 3, พ.ศ. 2552 - 2565",
-			"gpa": "2.80",
-			"hide": false
-		},
-		{
-			"head": "โรงเรียนมารีวิทยา นนทบุรี",
-			"details": "ระดับปฐมวัย, พ.ศ. 2551-2552",
-			"hide": true
-		}
-	],
-	"certifications": [
-		{
-			"name": "Microsoft Applied Skills: Administer Active Directory Domain Services",
-			"date": "1 กรกฎาคม 2569",
-			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
-		},
-		{
-			"name": "Microsoft Applied Skills: Create an Intelligent Document Processing Solution with Azure AI Document Intelligence",
-			"date": "1 กรกฎาคม 2569",
-			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/20279A84E57A93E?sharingId=557C1B61BE7EE12F"
-		},
-		{
-			"name": "Microsoft Applied Skills: Deploy and Administer Linux Virtual Machines on Microsoft Azure",
-			"date": "1 กรกฎาคม 2569",
-			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/CB849F743F1B0B09?sharingId=557C1B61BE7EE12F"
-		},
-		{
-			"name": "Microsoft Applied Skills: Get Started with Identities and Access Using Microsoft Entra",
-			"date": "1 กรกฎาคม 2569",
-			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
-		},
-		{
-			"name": "Microsoft Applied Skills: Get Started Developing Agents in Microsoft Foundry",
-			"date": "1 กรกฎาคม 2569",
-			"verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/AB8E61F7BBEC99AA?sharingId=557C1B61BE7EE12F"
-		},
-		{
-			"name": "คุณวุฒิวิชาชีพ สาขาวิชาชีพอุตสาหกรรมดิจิทัล สาขาความมั่นคงปลอดภัยทางดิจิทัลและส่วนบุคคล อาชีพช่างสนับสนุนด้านเทคนิค ระดับ 3",
-			"date": "23 มีนาคม 2569",
-			"verificationUrl": "https://cpweb.ewe.go.th/show-cert?code=284071&system=1&type=certCom&bgImage=false"
-		},
-		{
-			"name": "หลักสูตรการประกอบและซ่อมบำรุงไมโครคอมพิวเตอร์ 59 ชั่วโมง",
-			"date": "30 พฤศจิกายน 2562",
-			"url": "certificate/pdf/ctn-microcomputer.pdf"
-		},
-		{
-			"name": "หลักสูตรการประกอบและซ่อมบำรุงไมโครโน๊ตบุ๊ค 48 ชั่วโมง",
-			"date": "9 กุมภาพันธ์ 2565",
-			"url": "certificate/pdf/ctn-micronotebook-th.pdf"
-		},
-		{
-			"name": "โครงการอบรมเชิงปฏิบัติการ เรื่อง “การใช้ปัญญาประดิษฐ์ (AI) ในระบบสมองกลฝังตัวเพื่อการควบคุมอัตโนมัติ”",
-			"date": "24 พฤษจิกายน 2568",
-			"url": "certificate/pdf/kmutnb-arduinoai.pdf"
-		},
-		{
-			"name": "โครงการอบรมเชิงปฏิบัติการ เรื่อง “คอนเทนต์ครีเอเตอร์ (Content Creator) สร้างคอนเทนต์อย่างไร ให้โดนตาต้องใจ”, โครงการบทบาทพื้นที่สร้างสรรค์สำหรับเด็กและเยาวชน ประจำปี 2567",
-			"date": "28 สิงหาคม 2567",
-			"url": "certificate/pdf/btt-contentcreator.pdf"
-		},
-		{
-			"name": "Samsung Innovation Campus: Basic Coding 2022",
-			"date": "9 พฤษภาคม 2565",
-			"url": "certificate/pdf/sic2022-basiccoding.pdf"
-		},
-		{
-			"name": "การแข่งขันตอบปัญหาคอมพิวเตอร์ รองชนะเลิศอันดับ 1",
-			"date": "26 มีนาคม 2564",
-			"url": "certificate/pdf/pms-askcom64.pdf"
-		}
-	],
-	"interests": [
-		"วิศวกรรมซอฟต์แวร์และสถาปัตยกรรม",
-		"ระบบคลาวด์และโครงสร้างพื้นฐาน",
-		"การมีส่วนร่วมในโอเพนซอร์ซ",
-		"แมคคานิคอลคีย์บอร์ดและเครื่องมือเพิ่มประสิทธิภาพการทำงาน"
-	],
-	"resumeUrl": {
-		"sourceLink": "https://github.com/toonshouin",
-		"fullVersion": "https://resume.toonshou.in"
-	}
+  "headers": {
+    "coreCompetencies": "ความสามารถหลัก",
+    "workExperience": "ประสบการณ์การทำงาน",
+    "projects": "โปรเจ็กต์ผลงาน",
+    "education": "ประวัติการศึกษา",
+    "certifications": "ใบรับรอง",
+    "interests": "ความสนใจ",
+    "positions": "ตำแหน่งงานที่สามารถทำได้"
+  },
+  "intro": {
+    "name": "กฤตภาส ยาวิราช",
+    "nickname": "การ์ตูน",
+    "phone": "+66845441345",
+    "email": "me@toonshou.in",
+    "github": "toonshouin",
+    "linkedin": "toonoeichi",
+    "hidePicture": false,
+    "location": {
+      "house_no": "55/228 - 229",
+      "moo": "5",
+      "soi": "7",
+      "village": "มนวดี เอ็กซ์คูลชีฟ",
+      "road": "บ้านกล้วย - ไทรน้อย",
+      "sub_district": "พิมลราช",
+      "district": "บางบัวทอง",
+      "province": "นนทบุรี",
+      "country": "ไทย",
+      "zip_code": "11110"
+    },
+    "website": "toonshou.in",
+    "description": "นักศึกษาไอทีที่เชี่ยวชาญด้าน Web Development มีประสบการณ์กับเฟรมเวิร์คสมัยใหม่ทั้งบนแพลตฟอร์มเดสก์ท็อปและมือถือ สามารถเรียนรู้เทคโนโลยีใหม่ๆ ได้อย่างรวดเร็ว มีส่วนร่วมในโปรเจ็กต์โอเพนซอร์ซ และพัฒนาแอปพลิเคชันเว็บที่แข็งแกร่งตามมาตรฐานสมัยใหม่"
+  },
+  "projects": [
+    {
+      "name": "Hack Club Thai Translation",
+      "bullets": [
+        "แปลเว็บไซต์ Hack Club Global เป็นภาษาไทย เพื่อเพิ่มโอกาสในการเข้าถึงข้อมูลและกิจกรรมสำหรับนักเรียนไทย"
+      ],
+      "url": "thai.hackclub.com",
+      "hide": true
+    },
+    {
+      "name": "Cartoon Office Word",
+      "bullets": [
+        "พัฒนาแอปพลิเคชันประมวลผลคำขั้นพื้นฐานด้วย Visual Basic เพื่อศึกษาแนวคิดเกี่ยวกับการแสดงผลข้อความและการแก้ไขเอกสาร"
+      ],
+      "url": "github.com/EchoStory/CartoonOffice",
+      "hide": false
+    },
+    {
+      "name": "เว็บไซต์หลัก (toonshou.in)",
+      "bullets": [
+        "พัฒนาเว็บไซต์ส่วนตัวสำหรับนำเสนอผลงาน แบ่งปันเนื้อหา และรองรับการเข้าถึงผ่านอุปกรณ์สมัยใหม่",
+        "ออกแบบเว็บไซต์ด้วยส่วนติดต่อผู้ใช้ที่ทันสมัย โดยยังคำนึงถึงความเข้ากันได้กับระบบและเทคโนโลยีเว็บรุ่นเก่า"
+      ],
+      "url": "toonshou.in",
+      "hide": false
+    },
+    {
+      "name": "เว็บไซต์ย้อนยุค (legacy.toonshou.in)",
+      "bullets": [
+        "พัฒนาเว็บไซต์ส่วนตัวในรูปแบบทางเลือก โดยได้รับแรงบันดาลใจจากรูปแบบเว็บไซต์ในยุค 1990 และชุมชน Neocities",
+        "ศึกษาและนำเสนอความสามารถและข้อจำกัดของเทคโนโลยีเว็บรุ่นเก่าผ่านการออกแบบเว็บไซต์สไตล์ย้อนยุค"
+      ],
+      "url": "legacy.toonshou.in",
+      "hide": false
+    },
+    {
+      "name": "เว็บไซต์รวมลิงก์ส่วนตัว (card.toonshou.in)",
+      "bullets": [
+        "พัฒนาเว็บไซต์ขนาดเล็กสำหรับรวบรวมลิงก์ช่องทางโซเชียลมีเดียและข้อมูลส่วนตัวไว้ในที่เดียว พร้อมรองรับการเข้าถึงอย่างสะดวกผ่านการสแกนคิวอาร์โค้ด"
+      ],
+      "url": "card.toonshou.in",
+      "hide": false
+    },
+    {
+      "name": "ระบบจองห้องดนตรีออนไลน์และควบคุมผ่านเว็บแอปพลิเคชัน | PSC Music Web",
+      "bullets": [
+        "พัฒนาเว็บแอปพลิเคชันแบบรวมศูนย์สำหรับการจองห้องดนตรีออนไลน์และการสมัครสมาชิกชมรม",
+        "ออกแบบระบบปฏิทินกลางเพื่อให้ผู้ใช้งานสามารถตรวจสอบสถานะห้องว่างและตารางการจองได้อย่างสะดวก",
+        "พัฒนาระบบแจ้งเตือนและกระบวนการอนุมัติการจอง เพื่อเพิ่มประสิทธิภาพในการบริหารจัดการห้องดนตรีและลดปัญหาการจองเวลาทับซ้อนภายในวิทยาลัย"
+      ],
+      "url": "github.com/psc-musicwebproject/website",
+      "hide": false
+    },
+    {
+      "name": "ระบบตรวจวัดคุณภาพอากาศอัจฉริยะผ่าน Home Assistant | Smart Air Measurer",
+      "bullets": [
+        "ออกแบบและเขียนโปรแกรมควบคุมอุปกรณ์ IoT ด้วย Raspberry Pi Pico สำหรับตรวจวัดปริมาณฝุ่น PM2.5 อุณหภูมิ ความชื้น และก๊าซคาร์บอนมอนอกไซด์",
+        "พัฒนาระบบเชื่อมต่อกับ Home Assistant เพื่อแสดงผลข้อมูลสภาพแวดล้อม และรองรับการควบคุมเครื่องใช้ไฟฟ้าอัตโนมัติตามสภาวะคุณภาพอากาศ",
+        "พัฒนาระบบแจ้งเตือนคุณภาพอากาศแบบเรียลไทม์ผ่าน LINE Notify โดยผ่านการทดสอบการใช้งานจริงและได้รับคะแนนความพึงพอใจด้านความง่ายในการใช้งานระดับมาก ด้วยค่าเฉลี่ย 4.25"
+      ],
+      "url": "github.com/EchoStory/SmartAirMeasurer",
+      "hide": false
+    }
+  ],
+  "technologies": [
+    {
+      "section": "การเขียนโปรแกรม",
+      "details": "TypeScript, JavaScript, Python, PHP, C, C++, SQL, Bash/Shell"
+    },
+    {
+      "section": "เฟรมเวิร์ก",
+      "details": "SvelteKit, TailwindCSS, DaisyUI, Bootstrap, shadcn-svelte, Flask"
+    },
+    {
+      "section": "โครงสร้างพื้นฐานระบบคลาวด์",
+      "details": "AWS, Azure, Vercel, Cloudflare, Firebase, Docker, GitHub Actions, Git"
+    }
+  ],
+  "workExperiences": [
+    {
+      "position": "นักศึกษาฝึกงาน",
+      "company": "กองพัสดุครุภัณฑ์ สำนักการศึกษา เทศบาลนครบางบัวทอง",
+      "url": "https://buathongcity.go.th/frontpage",
+      "years": ["2566"],
+      "bullets": [
+        "สนับสนุนฝ่ายเทคโนโลยีสารสนเทศเพื่อการศึกษาโดยการบำรุงรักษาฮาร์ดแวร์คอมพิวเตอร์และแก้ไขปัญหาระบบ",
+        "ประยุกต์ใช้เวิร์กโฟลว์ OCR เพื่อแปลงเอกสารราชการเป็นรูปแบบดิจิทัล ช่วยเพิ่มประสิทธิภาพของแผนกและความแม่นยำในการตรวจสอบ"
+      ]
+    }
+  ],
+  "educations": [
+    {
+      "head": "วิทยาลัยเทคโนโลยีพงษ์สวัสดิ์",
+      "details": "ประกาศนียบัตรวิชาชีพชั้นสูง สาขาวิชาเทคโนโลยีสารสนเทศ, พ.ศ. 2568 - 2570",
+      "gpa": "3.69"
+    },
+    {
+      "head": "วิทยาลัยอาชีวศึกษาดุสิตพาณิชยการ นนทบุรี",
+      "details": "ประกาศนียบัตรวิชาชีพ สาขาวิชาคอมพิวเตอร์ธุรกิจ, พ.ศ. 2565 - 2568",
+      "gpa": "3.70",
+      "relevantCoursework": ["ธุรกิจคอมพิวเตอร์", "การเขียนโปรแกรมเบื้องต้น"]
+    },
+    {
+      "head": "โรงเรียนพระแม่สกลสงเคราะห์",
+      "details": "ประถมศึกษา-มัธยมศึกษาปีที่ 3, พ.ศ. 2552 - 2565",
+      "gpa": "2.80",
+      "hide": false
+    },
+    {
+      "head": "โรงเรียนมารีวิทยา นนทบุรี",
+      "details": "ระดับปฐมวัย, พ.ศ. 2551-2552",
+      "hide": true
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Microsoft Applied Skills: Administer Active Directory Domain Services",
+      "date": "21 พฤษภาคม 2568",
+      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
+    },
+    {
+      "name": "Microsoft Applied Skills: Create an Intelligent Document Processing Solution with Azure AI Document Intelligence",
+      "date": "28 ตุลาคม 2567",
+      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/20279A84E57A93E?sharingId=557C1B61BE7EE12F"
+    },
+    {
+      "name": "Microsoft Applied Skills: Deploy and Administer Linux Virtual Machines on Microsoft Azure",
+      "date": "28 ตุลาคม 2567",
+      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/CB849F743F1B0B09?sharingId=557C1B61BE7EE12F"
+    },
+    {
+      "name": "Microsoft Applied Skills: Get Started with Identities and Access Using Microsoft Entra",
+      "date": "21 พฤษภาคม 2568",
+      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
+    },
+    {
+      "name": "Microsoft Applied Skills: Get Started Developing Agents in Microsoft Foundry",
+      "date": "1 กรกฎาคม 2569",
+      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/AB8E61F7BBEC99AA?sharingId=557C1B61BE7EE12F"
+    },
+    {
+      "name": "คุณวุฒิวิชาชีพ สาขาวิชาชีพอุตสาหกรรมดิจิทัล สาขาความมั่นคงปลอดภัยทางดิจิทัลและส่วนบุคคล อาชีพช่างสนับสนุนด้านเทคนิค ระดับ 3",
+      "date": "23 มีนาคม 2569",
+      "verificationUrl": "https://cpweb.ewe.go.th/show-cert?code=284071&system=1&type=certCom&bgImage=false"
+    },
+    {
+      "name": "หลักสูตรการประกอบและซ่อมบำรุงไมโครคอมพิวเตอร์ (59 ชั่วโมง)",
+      "date": "30 พฤศจิกายน 2562",
+      "url": "certificate/pdf/ctn-microcomputer.pdf"
+    },
+    {
+      "name": "หลักสูตรการประกอบและซ่อมบำรุงไมโครโน้ตบุ๊ก (48 ชั่วโมง)",
+      "date": "9 กุมภาพันธ์ 2565",
+      "url": "certificate/pdf/ctn-micronotebook-th.pdf"
+    },
+    {
+      "name": "โครงการอบรมเชิงปฏิบัติการ เรื่อง “การใช้ปัญญาประดิษฐ์ (AI) ในระบบสมองกลฝังตัวเพื่อการควบคุมอัตโนมัติ”",
+      "date": "24 พฤศจิกายน 2568",
+      "url": "certificate/pdf/kmutnb-arduinoai.pdf"
+    },
+    {
+      "name": "โครงการอบรมเชิงปฏิบัติการ หลักสูตร Smart AI Innovation (12 ชั่วโมง)",
+      "date": "17 กันยายน 2569",
+      "url": "certificate/pdf/kmutnb-smartai.pdf"
+    },
+    {
+      "name": "โครงการอบรมเชิงปฏิบัติการ เรื่อง “คอนเทนต์ครีเอเตอร์ (Content Creator) สร้างคอนเทนต์อย่างไรให้โดนตาต้องใจ” ภายใต้โครงการบทบาทพื้นที่สร้างสรรค์สำหรับเด็กและเยาวชน ประจำปี 2567",
+      "date": "28 สิงหาคม 2567",
+      "url": "certificate/pdf/btt-contentcreator.pdf"
+    },
+    {
+      "name": "Samsung Innovation Campus: Basic Coding 2022",
+      "date": "9 พฤษภาคม 2565",
+      "url": "certificate/pdf/sic2022-basiccoding.pdf"
+    },
+    {
+      "name": "การแข่งขันตอบปัญหาคอมพิวเตอร์ รางวัลรองชนะเลิศอันดับ 1",
+      "date": "26 มีนาคม 2564",
+      "url": "certificate/pdf/pms-askcom64.pdf"
+    },
+    {
+      "name": "หลักสูตร LINK Certified Network Cabling for Engineering (LCCE) การติดตั้งระบบสายสัญญาณเครือข่ายสำหรับงานวิศวกรรม",
+      "date": "10 มิถุนายน 2569",
+      "url": "certificate/pdf/interlink-lcce.pdf"
+    },
+    {
+      "name": "Pearson: Generative AI Foundations (พื้นฐานปัญญาประดิษฐ์เชิงสร้างสรรค์)",
+      "date": "13 สิงหาคม 2569",
+      "verificationUrl": "https://verify.certiport.com/rkeV-u8N2",
+      "url": "certificate/pdf/ccs-generativeaifoundations.pdf"
+    }
+  ],
+  "interests": [
+    "วิศวกรรมซอฟต์แวร์และสถาปัตยกรรม",
+    "ระบบคลาวด์และโครงสร้างพื้นฐาน",
+    "การมีส่วนร่วมในโอเพนซอร์ซ",
+    "แมคคานิคอลคีย์บอร์ดและเครื่องมือเพิ่มประสิทธิภาพการทำงาน"
+  ],
+  "positions": [
+    {
+      "name": "นักพัฒนาเว็บไซต์",
+      "description": "พัฒนาและบำรุงรักษาเว็บไซต์และเว็บแอปพลิเคชันด้วยเทคโนโลยีเว็บสมัยใหม่ จัดการระบบควบคุมเวอร์ชันและปรับปรุงกระบวนการพัฒนาด้วย Git รวมถึงการปรับใช้ การอัปเดต และการบำรุงรักษาแอปพลิเคชัน"
+    },
+    {
+      "name": "ผู้ดูแลระบบไอที",
+      "description": "ให้การสนับสนุนด้านเทคนิค แก้ไขปัญหา และดูแลรักษาฮาร์ดแวร์ ซอฟต์แวร์ และโครงสร้างพื้นฐานระบบเครือข่าย จัดการบัญชีผู้ใช้ สิทธิ์การเข้าถึง และระบบยืนยันตัวตนด้วย Active Directory รวมถึงโซลูชัน Single Sign-On (SSO) เช่น Authentik และ Microsoft Entra ID"
+    }
+  ],
+  "resumeUrl": {
+    "sourceLink": "https://github.com/toonshouin",
+    "fullVersion": "https://resume.toonshou.in"
+  }
 }
