@@ -3,14 +3,12 @@
 	import type { IProfileResp } from "../types";
 	import Hideable from "./Hideable.svelte";
 	import Intro from "./Intro.svelte";
-	import Kofi from "./Kofi.svelte";
 	import Work from "./Work.svelte";
 	import Certifications from "./Certifications.svelte";
 
 	export let profile: IProfileResp;
 	export let lang: string;
 
-	$: dataLink = `${fullVersionLink}`;
 	$: ({
 		headers = {
 			coreCompetencies: "Core Competencies",
@@ -29,30 +27,21 @@
 		certifications = [],
 		interests = [],
 		positions = [],
-		resumeUrl: { sourceLink = "", fullVersionLink = "" } = {},
+		resumeUrl: { sourceLink = "" } = {},
 	} = profile || {});
-
-	$: tokenParam = $page.url.searchParams.has("token")
-		? `&token=${$page.url.searchParams.get("token")}`
-		: "";
 </script>
 
-<!-- Remove this is you does not want Kofi widget on your site -->
-{#if intro.github == ""}
-	<Kofi name={intro.github} />
-{/if}
-
 <header
-	class="web-only text-center p-4 sm:p-6 bg-indigo-600 text-white w-screen"
+	class="web-only text-center p-4 sm:p-6 bg-indigo-600 text-white w-full"
 >
-	<div class="inline-flex items-center gap-2 justify-center">
+	<div class="inline-flex flex-wrap items-center gap-2 justify-center">
 		<h1 class="text-4xl">Resume</h1>
 		<button on:click={() => window.print()} class="underline text-lg"
 			>[Print]</button
 		>
 		<a href={sourceLink} target="_blank" rel="noopener">[Source]</a>
-		<a href={`?lang=en${tokenParam}`} class="underline text-lg">[EN]</a>
-		<a href={`?lang=th${tokenParam}`} class="underline text-lg">[TH]</a>
+		<a href="?lang=en" class="underline text-lg">[EN]</a>
+		<a href="?lang=th" class="underline text-lg">[TH]</a>
 	</div>
 	<p>
 		Printer-friendly standard resume, any HTML tags with <code
@@ -88,17 +77,19 @@
 				</h2>
 				<ul class="text-left list-none space-y-1">
 					{#each technologies as tech}
-						<Hideable>
-							<li
-								class="flex flex-col sm:flex-row print:flex-row gap-1 sm:gap-2"
-							>
-								<strong
-									class="w-full sm:w-48 print:w-40 flex-none"
-									>{tech.section}</strong
-								>
-								<span class="flex-1">{tech.details}</span>
-							</li>
-						</Hideable>
+						<li
+							class="flex flex-col sm:flex-row print:flex-row gap-1 sm:gap-2"
+						>
+							<Hideable>
+								<div class="flex flex-col sm:flex-row print:flex-row gap-1 sm:gap-2">
+									<strong
+										class="w-full sm:w-48 print:w-40 flex-none"
+										>{tech.section}</strong
+									>
+									<span class="flex-1">{tech.details}</span>
+								</div>
+							</Hideable>
+						</li>
 					{/each}
 				</ul>
 			</Hideable>
@@ -113,8 +104,8 @@
 				</h2>
 				<ul class="text-left space-y-3 print:space-y-2">
 					{#each positions as position}
-						<Hideable>
-							<li>
+						<li>
+							<Hideable>
 								<div class="flex items-start">
 									<div class="font-bold shrink-0">
 										{position.name}
@@ -124,8 +115,8 @@
 										{position.description}
 									</div>
 								</div>
-							</li>
-						</Hideable>
+							</Hideable>
+						</li>
 					{/each}
 				</ul>
 			</Hideable>
@@ -154,14 +145,14 @@
 				{#each projects as project}
 					<Hideable>
 						<div class="mb-3 print:mb-2 text-left">
-							<div class="font-bold flex justify-between">
+							<div class="font-bold flex flex-col sm:flex-row print:flex-row justify-between items-start sm:items-baseline print:items-baseline gap-1">
 								<span>{project.name}</span>
 								{#if project.url}
 									<a
 										href={`https://${project.url}`}
 										target="_blank"
 										rel="noreferrer"
-										class="font-normal underline"
+										class="font-normal underline break-all"
 										>{project.url}</a
 									>
 								{/if}
@@ -186,8 +177,8 @@
 				</h2>
 				<ul class="text-left space-y-3 print:space-y-2">
 					{#each educations as edu}
-						<Hideable>
-							<li>
+						<li>
+							<Hideable>
 								<div class="font-bold">{edu.head}</div>
 								<div>
 									{edu.details}
@@ -203,8 +194,8 @@
 										{edu.relevantCoursework.join(", ")}
 									</div>
 								{/if}
-							</li>
-						</Hideable>
+							</Hideable>
+						</li>
 					{/each}
 				</ul>
 			</Hideable>
@@ -219,7 +210,7 @@
 						{headers.certifications}
 					</h2>
 					{#each certifications as cert}
-						<Certifications {...cert} />
+						<Certifications {...cert} {lang} />
 					{/each}
 				</Hideable>
 			</section>
@@ -234,9 +225,11 @@
 				</h2>
 				<ul class="text-left list-disc pl-8 print:pl-6">
 					{#each interests as interest}
-						<Hideable>
-							<li>{interest}</li>
-						</Hideable>
+						<li>
+							<Hideable>
+								<span>{interest}</span>
+							</Hideable>
+						</li>
 					{/each}
 				</ul>
 			</Hideable>
@@ -266,11 +259,6 @@
 		@apply font-semibold;
 	}
 
-	section hr {
-		@apply mt-0 mb-2;
-		border-color: darkgrey;
-	}
-
 	:global(.print-only) {
 		display: none;
 	}
@@ -294,10 +282,6 @@
 
 		section {
 			@apply my-2;
-		}
-
-		section hr {
-			@apply mt-0 mb-1;
 		}
 
 		main {

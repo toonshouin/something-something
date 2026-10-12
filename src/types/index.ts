@@ -1,5 +1,5 @@
 export interface IProfileResp {
-	headers?: IHeaders;
+	headers: IHeaders;
 	intro: IIntro;
 	projects: IProject[];
 	technologies: ITechnology[];
@@ -10,7 +10,8 @@ export interface IProfileResp {
 	positions: IPosition[];
 	resumeUrl: {
 		sourceLink: string;
-		fullVersionLink: string;
+		fullVersionLink?: string;
+		fullVersion?: string;
 	};
 }
 
@@ -37,7 +38,7 @@ export interface IIntro {
 	github: string;
 	linkedin: string;
 	hidePicture?: boolean;
-	location: {
+	location: string | {
 		house_no?: string;
 		moo?: string;
 		soi?: string;
@@ -89,5 +90,10 @@ export interface ICertification {
 	date?: string;
 	url?: string;
 	verificationUrl?: string;
+	verificationKind?: string;
+	verificationCode?: string;
+	validUntil?: string;
+	issuer?: string;
+	credentialType?: string;
 	hide?: boolean;
 }

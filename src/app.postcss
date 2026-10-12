@@ -1,4 +1,19 @@
-/* Write your global styles here, in PostCSS syntax */
+@import '@fontsource/noto-sans-thai/400.css';
+@import '@fontsource/noto-sans-thai/500.css';
+@import '@fontsource/noto-sans-thai/600.css';
+@import '@fontsource/noto-sans-thai/700.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body > div { display: contents; }
+
+@media (prefers-reduced-motion: reduce) {
+	*, *::before, *::after {
+		scroll-behavior: auto !important;
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+	}
+}

@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { fullVersionLink } from "../data";
 	import Hideable from "./Hideable.svelte";
 	export let name: string = "Foo";
 	export let nickname: string = "";
@@ -51,7 +50,7 @@
 		<div class="flex-none order-first print:order-none">
 			<Hideable>
 				<img
-					src={`profile_picture.png`}
+					src="profile_picture.webp"
 					alt={`${name}'s Profile Picture`}
 					class="w-32 h-auto rounded-lg border-2 border-gray-200 print:border-gray-800 object-cover"
 				/>

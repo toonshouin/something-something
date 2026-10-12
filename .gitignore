@@ -25,3 +25,7 @@ vite.config.ts.timestamp-*
 
 # Bun-related
 bun.lock
+
+# Test artifacts
+test-results/
+playwright-report/

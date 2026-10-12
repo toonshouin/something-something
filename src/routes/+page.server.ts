@@ -1,33 +1,69 @@
-import { env } from '$env/dynamic/private';
+import { redirect } from '@sveltejs/kit';
 import profileEn from '$lib/data/profile_en.json';
 import profileTh from '$lib/data/profile_th.json';
+import { todayInBangkok } from '$lib/dates';
+import { localeOf } from '$lib/ui';
+import { visibleProfile } from '$lib/server/profile';
+import {
+  validateAccessToken,
+  createSessionToken,
+  verifySessionToken,
+  recordAccessLog,
+  getPrivateAddress
+} from '$lib/server/access/baserow';
+import type { PageServerLoad } from './$types';
+import type { IProfileResp } from '../types';
 
-export async function load({ url }) {
-    const lang = url.searchParams.get('lang') === 'th' ? 'th' : 'en';
-    const token = url.searchParams.get('token');
+export const load: PageServerLoad = async ({ url, cookies }) => {
+  const token = url.searchParams.get('token');
 
-    // Deep clone the imported JSON so we can safely mutate it
-    const profile = JSON.parse(JSON.stringify(lang === 'th' ? profileTh : profileEn));
+  // Query-string token authorization flow
+  if (token) {
+    const { valid, grantId, reason } = await validateAccessToken(token);
 
-    const expectedToken = env.SECRET_TOKEN || '0fcd3396-6726-4e47-9a6e-807f0abd70a7';
+    // Record access event in Baserow before redirecting
+    await recordAccessLog({
+      grantId,
+      result: valid ? 'authorized' : 'denied',
+      reason
+    });
 
-    if (token !== expectedToken) {
-        // Hide sensitive information when the token is missing or invalid
-        if (profile?.intro?.location) {
-            profile.intro.location = {
-                country: profile.intro.location.country || "Thailand",
-                province: profile.intro.location.province || "Nonthaburi",
-                hidden: true // Added flag so UI can potentially indicate it's hidden
-            };
-        }
+    if (valid) {
+      cookies.set('resume_session', createSessionToken(grantId, 3600), {
+        httpOnly: true,
+        secure: process.env.NODE_ENV === 'production',
+        sameSite: 'lax',
+        path: '/',
+        maxAge: 3600
+      });
     }
 
-    // Filter out items with hide: true entirely
-    if (profile.projects) profile.projects = profile.projects.filter((p: any) => !p.hide);
-    if (profile.technologies) profile.technologies = profile.technologies.filter((t: any) => !t.hide);
-    if (profile.workExperiences) profile.workExperiences = profile.workExperiences.filter((w: any) => !w.hide);
-    if (profile.educations) profile.educations = profile.educations.filter((e: any) => !e.hide);
-    if (profile.certifications) profile.certifications = profile.certifications.filter((c: any) => !c.hide);
+    // Redirect to clean URL without the token parameter
+    const cleanUrl = new URL(url);
+    cleanUrl.searchParams.delete('token');
+    const target = cleanUrl.pathname + (cleanUrl.search || '');
+    throw redirect(303, target || '/');
+  }
 
-    return { profile, lang };
-}
+  // Session verification
+  const sessionCookie = cookies.get('resume_session');
+  const session = verifySessionToken(sessionCookie);
+  const isAuthorized = session.valid;
+
+  const lang = localeOf(url.searchParams.get('lang'));
+  const source = (lang === 'th' ? profileTh : profileEn) as IProfileResp;
+
+  let privateAddress = undefined;
+  if (isAuthorized) {
+    privateAddress = await getPrivateAddress(lang);
+  }
+
+  const profile = visibleProfile(source, isAuthorized, privateAddress);
+
+  return {
+    profile,
+    lang,
+    today: todayInBangkok(),
+    isAuthorized
+  };
+};

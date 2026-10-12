@@ -17,19 +17,11 @@
     "linkedin": "toonoeichi",
     "hidePicture": false,
     "location": {
-      "house_no": "55/228 - 229",
-      "moo": "5",
-      "soi": "7",
-      "village": "Monwadee Exclusive",
-      "road": "Bann Kluay - Sai Noi",
-      "sub_district": "Phimonrat",
-      "district": "Bang Bua Thong",
       "province": "Nonthaburi",
-      "country": "Thailand",
-      "zip_code": "11110"
+      "country": "Thailand"
     },
     "website": "toonshou.in",
-    "description": "IT student specializing in Web Development with experience in modern frameworks across desktop and mobile platforms. Proven ability to contribute to open-source projects, quickly adopt new technologies, and build robust web applications adhering to modern standards."
+    "description": "IT student focused on web development, with experience using modern frameworks across desktop and mobile platforms. Contributes to open-source projects, learns new technologies quickly, and builds web applications using current standards."
   },
   "projects": [
     {
@@ -152,78 +144,94 @@
   "certifications": [
     {
       "name": "Microsoft Applied Skills: Administer Active Directory Domain Services",
-      "date": "21 May 2025",
-      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
+      "date": "2025-05-21",
+      "issuer": "Microsoft",
+      "verificationKind": "direct",
+      "verificationUrl": "https://learn.microsoft.com/th-th/users/toonoeichi/credentials/f37349c40f143b52"
     },
     {
       "name": "Microsoft Applied Skills: Create an Intelligent Document Processing Solution with Azure AI Document Intelligence",
-      "date": "28 October 2024",
+      "date": "2024-10-28",
+      "issuer": "Microsoft",
+      "verificationKind": "direct",
       "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/20279A84E57A93E?sharingId=557C1B61BE7EE12F"
     },
     {
       "name": "Microsoft Applied Skills: Deploy and Administer Linux Virtual Machines on Microsoft Azure",
-      "date": "28 October 2024",
+      "date": "2024-10-28",
+      "issuer": "Microsoft",
+      "verificationKind": "direct",
       "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/CB849F743F1B0B09?sharingId=557C1B61BE7EE12F"
     },
     {
       "name": "Microsoft Applied Skills: Get Started with Identities and Access Using Microsoft Entra",
-      "date": "21 May 2025",
+      "date": "2025-05-21",
+      "issuer": "Microsoft",
+      "verificationKind": "direct",
       "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
     },
     {
       "name": "Microsoft Applied Skills: Get Started Developing Agents in Microsoft Foundry",
-      "date": "1 July 2026",
+      "date": "2026-07-01",
+      "issuer": "Microsoft",
+      "verificationKind": "direct",
       "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/AB8E61F7BBEC99AA?sharingId=557C1B61BE7EE12F"
     },
     {
       "name": "Professional Qualification in Digital Industry, Digital Security and Privacy Sub-Sector, Network Support Technician, Level 3",
-      "date": "23 March 2026",
+      "date": "2026-03-23",
+      "verificationKind": "direct",
       "verificationUrl": "https://cpweb.ewe.go.th/show-cert?code=284071&system=1&type=certCom&bgImage=false"
     },
     {
       "name": "Microcomputer Assembly and Maintenance Training Course (59 Hours)",
-      "date": "30 November 2019",
+      "date": "2019-11-30",
       "url": "certificate/pdf/ctn-microcomputer.pdf"
     },
     {
       "name": "Notebook Computer Assembly and Maintenance Training Course (48 Hours)",
-      "date": "9 February 2022",
+      "date": "2022-02-09",
       "url": "certificate/pdf/ctn-micronotebook-en.pdf"
     },
     {
       "name": "Hands-on Workshop: Artificial Intelligence (AI) in Embedded Systems for Automation and Control",
-      "date": "24 November 2025",
+      "date": "2025-11-24",
       "url": "certificate/pdf/kmutnb-arduinoai.pdf"
     },
     {
       "name": "Smart AI Innovation - Hands-on Training Workshop (12 Hours)",
-      "date": "17 September 2026",
+      "date": "2026-09-17",
       "url": "certificate/pdf/kmutnb-smartai.pdf"
     },
     {
       "name": "Content Creator Workshop: Creating Engaging Content – Creative Spaces for Children and Youth Project 2024",
-      "date": "28 August 2024",
+      "date": "2024-08-28",
       "url": "certificate/pdf/btt-contentcreator.pdf"
     },
     {
       "name": "Samsung Innovation Campus: Basic Coding 2022",
-      "date": "9 May 2022",
+      "date": "2022-05-09",
       "url": "certificate/pdf/sic2022-basiccoding.pdf"
     },
     {
       "name": "Computer Knowledge Competition – First Runner-Up (2nd Place)",
-      "date": "26 March 2021",
+      "date": "2021-03-26",
       "url": "certificate/pdf/pms-askcom64.pdf"
     },
     {
       "name": "LINK Certified Network Cabling for Engineering (LCCE)",
-      "date": "10 June 2026",
+      "date": "2026-06-10",
+      "validUntil": "2029-06-10",
       "url": "certificate/pdf/interlink-lcce.pdf"
     },
     {
       "name": "Pearson: Generative AI Foundations",
-      "date": "13 August 2026",
-      "verificationUrl": "https://verify.certiport.com/rkeV-u8N2",
+      "date": "2026-08-13",
+      "validUntil": "2031-08-13",
+      "issuer": "Pearson",
+      "verificationKind": "portal",
+      "verificationCode": "rkeV-u8N2",
+      "verificationUrl": "https://verify.certiport.com",
       "url": "certificate/pdf/ccs-generativeaifoundations.pdf"
     }
   ],
