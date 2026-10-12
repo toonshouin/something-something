@@ -17,19 +17,11 @@
     "linkedin": "toonoeichi",
     "hidePicture": false,
     "location": {
-      "house_no": "55/228 - 229",
-      "moo": "5",
-      "soi": "7",
-      "village": "มนวดี เอ็กซ์คูลชีฟ",
-      "road": "บ้านกล้วย - ไทรน้อย",
-      "sub_district": "พิมลราช",
-      "district": "บางบัวทอง",
       "province": "นนทบุรี",
-      "country": "ไทย",
-      "zip_code": "11110"
+      "country": "ไทย"
     },
     "website": "toonshou.in",
-    "description": "นักศึกษาไอทีที่เชี่ยวชาญด้าน Web Development มีประสบการณ์กับเฟรมเวิร์คสมัยใหม่ทั้งบนแพลตฟอร์มเดสก์ท็อปและมือถือ สามารถเรียนรู้เทคโนโลยีใหม่ๆ ได้อย่างรวดเร็ว มีส่วนร่วมในโปรเจ็กต์โอเพนซอร์ซ และพัฒนาแอปพลิเคชันเว็บที่แข็งแกร่งตามมาตรฐานสมัยใหม่"
+    "description": "นักศึกษาไอทีที่มุ่งเน้นด้าน Web Development มีประสบการณ์ใช้เฟรมเวิร์กสมัยใหม่บนแพลตฟอร์มเดสก์ท็อปและมือถือ มีส่วนร่วมในโปรเจ็กต์โอเพนซอร์ซ เรียนรู้เทคโนโลยีใหม่ได้รวดเร็ว และพัฒนาเว็บแอปพลิเคชันตามมาตรฐานปัจจุบัน"
   },
   "projects": [
     {
@@ -98,15 +90,19 @@
   "technologies": [
     {
       "section": "การเขียนโปรแกรม",
-      "details": "TypeScript, JavaScript, Python, PHP, C, C++, SQL, Bash/Shell"
+      "details": "TypeScript, JavaScript, Python, PHP, C, C++, SQL, Bash/Shell, Visual Basic"
     },
     {
       "section": "เฟรมเวิร์ก",
-      "details": "SvelteKit, TailwindCSS, DaisyUI, Bootstrap, shadcn-svelte, Flask"
+      "details": "SvelteKit, TailwindCSS, DaisyUI, Bootstrap, shadcn-svelte, Flask, Laravel"
     },
     {
       "section": "โครงสร้างพื้นฐานระบบคลาวด์",
-      "details": "AWS, Azure, Vercel, Cloudflare, Firebase, Docker, GitHub Actions, Git"
+      "details": "AWS, Azure, Vercel, Cloudflare, Firebase, Docker, GitHub Actions, Git, Plesk"
+    },
+    {
+      "section": "เครื่องมือ",
+      "details": "Visual Studio Code, Antigravity, Arduino IDE, Git, Postman, mitmproxy"
     }
   ],
   "workExperiences": [
@@ -148,78 +144,94 @@
   "certifications": [
     {
       "name": "Microsoft Applied Skills: Administer Active Directory Domain Services",
-      "date": "21 พฤษภาคม 2568",
-      "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
+      "date": "2025-05-21",
+      "issuer": "Microsoft",
+      "verificationKind": "direct",
+      "verificationUrl": "https://learn.microsoft.com/th-th/users/toonoeichi/credentials/f37349c40f143b52"
     },
     {
       "name": "Microsoft Applied Skills: Create an Intelligent Document Processing Solution with Azure AI Document Intelligence",
-      "date": "28 ตุลาคม 2567",
+      "date": "2024-10-28",
+      "issuer": "Microsoft",
+      "verificationKind": "direct",
       "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/20279A84E57A93E?sharingId=557C1B61BE7EE12F"
     },
     {
       "name": "Microsoft Applied Skills: Deploy and Administer Linux Virtual Machines on Microsoft Azure",
-      "date": "28 ตุลาคม 2567",
+      "date": "2024-10-28",
+      "issuer": "Microsoft",
+      "verificationKind": "direct",
       "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/CB849F743F1B0B09?sharingId=557C1B61BE7EE12F"
     },
     {
       "name": "Microsoft Applied Skills: Get Started with Identities and Access Using Microsoft Entra",
-      "date": "21 พฤษภาคม 2568",
+      "date": "2025-05-21",
+      "issuer": "Microsoft",
+      "verificationKind": "direct",
       "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/4447968CAD30A109?sharingId=557C1B61BE7EE12F"
     },
     {
       "name": "Microsoft Applied Skills: Get Started Developing Agents in Microsoft Foundry",
-      "date": "1 กรกฎาคม 2569",
+      "date": "2026-07-01",
+      "issuer": "Microsoft",
+      "verificationKind": "direct",
       "verificationUrl": "https://learn.microsoft.com/api/credentials/share/en-us/toonoeichi/AB8E61F7BBEC99AA?sharingId=557C1B61BE7EE12F"
     },
     {
       "name": "คุณวุฒิวิชาชีพ สาขาวิชาชีพอุตสาหกรรมดิจิทัล สาขาความมั่นคงปลอดภัยทางดิจิทัลและส่วนบุคคล อาชีพช่างสนับสนุนด้านเทคนิค ระดับ 3",
-      "date": "23 มีนาคม 2569",
+      "date": "2026-03-23",
+      "verificationKind": "direct",
       "verificationUrl": "https://cpweb.ewe.go.th/show-cert?code=284071&system=1&type=certCom&bgImage=false"
     },
     {
       "name": "หลักสูตรการประกอบและซ่อมบำรุงไมโครคอมพิวเตอร์ (59 ชั่วโมง)",
-      "date": "30 พฤศจิกายน 2562",
+      "date": "2019-11-30",
       "url": "certificate/pdf/ctn-microcomputer.pdf"
     },
     {
       "name": "หลักสูตรการประกอบและซ่อมบำรุงไมโครโน้ตบุ๊ก (48 ชั่วโมง)",
-      "date": "9 กุมภาพันธ์ 2565",
+      "date": "2022-02-09",
       "url": "certificate/pdf/ctn-micronotebook-th.pdf"
     },
     {
       "name": "โครงการอบรมเชิงปฏิบัติการ เรื่อง “การใช้ปัญญาประดิษฐ์ (AI) ในระบบสมองกลฝังตัวเพื่อการควบคุมอัตโนมัติ”",
-      "date": "24 พฤศจิกายน 2568",
+      "date": "2025-11-24",
       "url": "certificate/pdf/kmutnb-arduinoai.pdf"
     },
     {
       "name": "โครงการอบรมเชิงปฏิบัติการ หลักสูตร Smart AI Innovation (12 ชั่วโมง)",
-      "date": "17 กันยายน 2569",
+      "date": "2026-09-17",
       "url": "certificate/pdf/kmutnb-smartai.pdf"
     },
     {
       "name": "โครงการอบรมเชิงปฏิบัติการ เรื่อง “คอนเทนต์ครีเอเตอร์ (Content Creator) สร้างคอนเทนต์อย่างไรให้โดนตาต้องใจ” ภายใต้โครงการบทบาทพื้นที่สร้างสรรค์สำหรับเด็กและเยาวชน ประจำปี 2567",
-      "date": "28 สิงหาคม 2567",
+      "date": "2024-08-28",
       "url": "certificate/pdf/btt-contentcreator.pdf"
     },
     {
       "name": "Samsung Innovation Campus: Basic Coding 2022",
-      "date": "9 พฤษภาคม 2565",
+      "date": "2022-05-09",
       "url": "certificate/pdf/sic2022-basiccoding.pdf"
     },
     {
       "name": "การแข่งขันตอบปัญหาคอมพิวเตอร์ รางวัลรองชนะเลิศอันดับ 1",
-      "date": "26 มีนาคม 2564",
+      "date": "2021-03-26",
       "url": "certificate/pdf/pms-askcom64.pdf"
     },
     {
       "name": "หลักสูตร LINK Certified Network Cabling for Engineering (LCCE) การติดตั้งระบบสายสัญญาณเครือข่ายสำหรับงานวิศวกรรม",
-      "date": "10 มิถุนายน 2569",
+      "date": "2026-06-10",
+      "validUntil": "2029-06-10",
       "url": "certificate/pdf/interlink-lcce.pdf"
     },
     {
       "name": "Pearson: Generative AI Foundations (พื้นฐานปัญญาประดิษฐ์เชิงสร้างสรรค์)",
-      "date": "13 สิงหาคม 2569",
-      "verificationUrl": "https://verify.certiport.com/rkeV-u8N2",
+      "date": "2026-08-13",
+      "validUntil": "2031-08-13",
+      "issuer": "Pearson",
+      "verificationKind": "portal",
+      "verificationCode": "rkeV-u8N2",
+      "verificationUrl": "https://verify.certiport.com",
       "url": "certificate/pdf/ccs-generativeaifoundations.pdf"
     }
   ],

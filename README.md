@@ -1,39 +1,27 @@
-# create-svelte
+# Bilingual resume
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A server-rendered Thai/English CV built with SvelteKit and Tailwind CSS. The page supports browser printing, per-entry print customization, locally hosted Thai/Latin fonts, and optional disclosure of the detailed address through a server environment token.
 
-## Creating a project
+## Local development
 
-If you're seeing this, you've probably already done this step. Congrats!
+Use Node.js 22 and npm 10. The repository intentionally keeps one lockfile.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
+```sh
+npm ci
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Quality checks:
 
-To create a production version of your app:
-
-```bash
+```sh
+npm run check
+npm run lint
+npm test
+npx playwright install chromium
+npm run test:e2e
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Set `SECRET_TOKEN` only when private address links are required. Without it, the detailed address always remains hidden. The token is passed as `?token=...`; treat such URLs as sensitive and avoid sharing them through systems that retain URL query strings.
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
-npm run dev -- --host 100.95.241.139 --port 5020
+See [DEPLOYMENT.md](DEPLOYMENT.md), [MIGRATION.md](MIGRATION.md), and [SECURITY_AUDIT.md](SECURITY_AUDIT.md).

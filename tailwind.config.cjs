@@ -7,6 +7,7 @@ const config = {
 			fontFamily: {
 				sans: [
 					'Noto Sans Thai',
+					'Noto Sans',
 					'-apple-system',
 					'BlinkMacSystemFont',
 					'Segoe UI',
