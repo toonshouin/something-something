@@ -38,6 +38,34 @@ function getAuthHeader(token: string): string {
   return token.startsWith('Token ') ? token : `Token ${token}`;
 }
 
+function getBaseHeaders(dbToken: string): Record<string, string> {
+  const headers: Record<string, string> = {
+    Authorization: getAuthHeader(dbToken),
+    'Content-Type': 'application/json',
+    Accept: 'application/json',
+    'User-Agent': 'Mozilla/5.0 (compatible; ResumeApp/1.0; +https://resume.toonshou.in)'
+  };
+
+  const cfClientId = getEnv('CF_ACCESS_CLIENT_ID');
+  const cfClientSecret = getEnv('CF_ACCESS_CLIENT_SECRET');
+  if (cfClientId && cfClientSecret) {
+    headers['CF-Access-Client-Id'] = cfClientId;
+    headers['CF-Access-Client-Secret'] = cfClientSecret;
+  }
+
+  const customHeadersJson = getEnv('BASEROW_CUSTOM_HEADERS');
+  if (customHeadersJson) {
+    try {
+      const parsed = JSON.parse(customHeadersJson);
+      Object.assign(headers, parsed);
+    } catch {
+      // Ignore parse failure
+    }
+  }
+
+  return headers;
+}
+
 function getSigningSecret(): string {
   return getEnv('SESSION_SECRET') || getEnv('SECRET_TOKEN') || 'resume-fallback-secret-key-32-chars-minimum';
 }
@@ -108,7 +136,7 @@ export async function validateAccessToken(token: string | null | undefined): Pro
     try {
       const url = `${apiUrl}/api/database/rows/table/${grantTableId}/?user_field_names=true&filter__token__equal=${encodeURIComponent(token)}&filter__is_active__boolean=true`;
       const res = await fetch(url, {
-        headers: { Authorization: getAuthHeader(dbToken) },
+        headers: getBaseHeaders(dbToken),
         signal: AbortSignal.timeout(3500)
       });
 
@@ -131,7 +159,11 @@ export async function validateAccessToken(token: string | null | undefined): Pro
         }
       } else {
         const errText = await res.text().catch(() => '');
-        console.warn(`[Baserow Token Validation] Table ${grantTableId} returned ${res.status}: ${errText}`);
+        if (errText.includes('Just a moment...') || errText.includes('challenges.cloudflare.com')) {
+          console.warn(`[Baserow Token Validation] Table ${grantTableId} blocked by Cloudflare Managed Challenge (WAF/Bot Fight Mode) on ${apiUrl}.`);
+        } else {
+          console.warn(`[Baserow Token Validation] Table ${grantTableId} returned ${res.status}: ${errText}`);
+        }
       }
     } catch (err) {
       console.warn('[Baserow Token Validation Exception]:', err);
@@ -162,10 +194,7 @@ export async function incrementGrantUseCount(rowId: number, currentUseCount: str
     const patchUrl = `${apiUrl}/api/database/rows/table/${grantTableId}/${rowId}/?user_field_names=true`;
     const res = await fetch(patchUrl, {
       method: 'PATCH',
-      headers: {
-        Authorization: getAuthHeader(dbToken),
-        'Content-Type': 'application/json'
-      },
+      headers: getBaseHeaders(dbToken),
       body: JSON.stringify({ use_count: payloadValue }),
       signal: AbortSignal.timeout(3500)
     });
@@ -174,7 +203,11 @@ export async function incrementGrantUseCount(rowId: number, currentUseCount: str
       console.info(`[Baserow Access Grants] Incremented use_count for grant row ${rowId} to ${nextCount}`);
     } else {
       const errText = await res.text().catch(() => '');
-      console.warn(`[Baserow Access Grants] Notice: Cannot update use_count (${res.status}): ${errText}`);
+      if (errText.includes('Just a moment...') || errText.includes('challenges.cloudflare.com')) {
+        console.warn(`[Baserow Access Grants] Notice: Update use_count blocked by Cloudflare Managed Challenge.`);
+      } else {
+        console.warn(`[Baserow Access Grants] Notice: Cannot update use_count (${res.status}): ${errText}`);
+      }
     }
   } catch (err) {
     console.warn('[Baserow Access Grants] Notice: Exception updating use_count:', err);
@@ -201,17 +234,18 @@ export async function recordAccessLog(event: AccessLogEvent): Promise<void> {
 
       const res = await fetch(postUrl, {
         method: 'POST',
-        headers: {
-          Authorization: getAuthHeader(dbToken),
-          'Content-Type': 'application/json'
-        },
+        headers: getBaseHeaders(dbToken),
         body: JSON.stringify(body),
         signal: AbortSignal.timeout(3500)
       });
 
       if (!res.ok) {
         const errorText = await res.text().catch(() => '');
-        console.error(`[Baserow Access Log Error] ${res.status}: ${errorText}`);
+        if (errorText.includes('Just a moment...') || errorText.includes('challenges.cloudflare.com')) {
+          console.error(`[Baserow Access Log Error] 403: Blocked by Cloudflare Managed Challenge (WAF/Bot Fight Mode) on ${apiUrl}.`);
+        } else {
+          console.error(`[Baserow Access Log Error] ${res.status}: ${errorText}`);
+        }
       } else {
         console.info(`[Baserow Access Log] Recorded access event: ${event.grantId} (${event.result})`);
       }
@@ -244,7 +278,7 @@ export async function getPrivateAddress(lang: 'en' | 'th'): Promise<AddressDetai
     try {
       const url = `${apiUrl}/api/database/rows/table/${addressTableId}/?user_field_names=true`;
       const res = await fetch(url, {
-        headers: { Authorization: getAuthHeader(dbToken) },
+        headers: getBaseHeaders(dbToken),
         signal: AbortSignal.timeout(3500)
       });
 
